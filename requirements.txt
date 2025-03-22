@@ -1,4 +1,18 @@
+# Data processing and analysis
 pandas>=2.0.0
+numpy>=1.20.0
+
+# Machine Learning
 scikit-learn>=1.0.0
+joblib>=1.1.0
+imbalanced-learn>=0.10.0  # for SMOTE
+
+# Visualization
 matplotlib>=3.0.0
+
+# AI/ML Services
 google-generativeai>=0.1.0
+
+# Environment and Path Management
+python-dotenv>=0.19.0
+pathlib>=1.0.1

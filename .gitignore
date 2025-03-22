@@ -1,13 +1,45 @@
-# Ignore virtual environment
+# Virtual Environment
 venv/
+env/
+.venv/
+.env/
 
-# Ignore Python cache files
+# Python cache files
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+.pytest_cache/
 
-# Ignore environment variables
+# Environment variables
 .env
+*.env
 
-# Ignore data files (optional)
+# Data files
 data/*.csv
+*.csv
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Model files
+model/*.pkl
+*.pkl
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# System files
+.DS_Store
+Thumbs.db
