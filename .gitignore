@@ -14,10 +14,6 @@ __pycache__/
 .env
 *.env
 
-# Data files
-data/*.csv
-*.csv
-
 # IDE specific files
 .vscode/
 .idea/
