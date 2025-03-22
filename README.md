@@ -4,6 +4,7 @@
 
 ## Overview
 This project predicts Kubernetes failures using machine learning and identifies root causes using Generative AI.
+Most solutions focus on predicting failures, but very few provide insights into the underlying causes. By integrating Root Cause Analysis (RCA), this solution goes beyond mere prediction, offering actionable insights that help prevent failures and optimize system performance.
 
 ## Directory
 
