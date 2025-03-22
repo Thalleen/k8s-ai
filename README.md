@@ -7,7 +7,7 @@ This project predicts Kubernetes failures using machine learning and identifies 
 
 Download the dataset from this link and add it under the data/: [Click Here](https://www.kaggle.com/datasets/nickkinyae/kubernetes-resource-and-performancemetricsallocation?select=kubernetes_performance_metrics_dataset.csv)
 
-
+```
 8S-AI/
 ├── data/                        # Raw and processed datasets
 │   ├── kubernetes_performance.csv
@@ -27,7 +27,8 @@ Download the dataset from this link and add it under the data/: [Click Here](htt
 ├── .env                         # Environment variables (not committed)
 ├── .gitignore                   # Ignore files and directories (e.g., .env, venv, models)
 ├── requirements.txt             # Python dependencies
-├── README.md                    # Project documentation 
+├── README.md                    # Project documentation
+```
 
 ## How to Run
 1. Install dependencies: `pip install -r requirements.txt`
