@@ -29,7 +29,7 @@ Download the dataset from this link and add it under the data/: [Click Here](htt
 ├── .env                         # Environment variables (not committed)
 ├── .gitignore                   # Ignore files and directories (e.g., .env, venv, models)
 ├── requirements.txt             # Python dependencies
-├── README.md                    # Project documentation
+├── README.md                    # Project documentation 
 
 ## How to Run
 1. Install dependencies: `pip install -r requirements.txt`
