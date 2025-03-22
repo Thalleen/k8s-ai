@@ -34,7 +34,7 @@ k8s-AI/
 ### 📥 **Dataset**  
 Download the dataset from [Kaggle](https://www.kaggle.com/datasets/nickkinyae/kubernetes-resource-and-performancemetricsallocation?select=kubernetes_performance_metrics_dataset.csv) and place it inside the `data/` directory.  
 
-##Prerequisites
+## Prerequisites
 Before running the project, ensure you have the following installed:
 
 Python 3.8 or higher
