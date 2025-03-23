@@ -20,7 +20,6 @@ __pycache__/
 *.swp
 *.swo
 
-
 # Distribution / packaging
 dist/
 build/
