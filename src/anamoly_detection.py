@@ -2,70 +2,47 @@ import pandas as pd
 import numpy as np
 import joblib
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelEncoder
 from pathlib import Path
 
-# Define dataset and model paths relative to the script's location
+# Define dataset and model paths
 BASE_DIR = Path(__file__).resolve().parent.parent  # Adjust if running from a different directory
-DATA_PATH = BASE_DIR / "data" / "k8s_cleaned_labeled.csv"
-MODEL_PATH = BASE_DIR / "model" / "RFC_prediction_model1.pkl"
+DATA_PATH = BASE_DIR / "data" / "kubernetes_validation.csv"
+TRAIN_DATA_PATH = BASE_DIR / "data" / "kubernetes_performance_metrics_dataset.csv"  # Training data to recreate LabelEncoder
+MODEL_PATH = BASE_DIR / "model" / "RFC_prediction_model.pkl"
 SAVE_DATA_PATH = BASE_DIR / "data" / "k8s_with_anomalies.csv"
 
-# Feature Engineering (same as during training)
-def preprocess_data(data):
-    # Compute derived features
-    data['cpu_memory_ratio'] = np.where(data['node_memory_usage'] == 0, 0, data['node_cpu_usage'] / data['node_memory_usage'])
-    data['disk_network_ratio'] = np.where(data['network_latency'] == 0, 0, data['disk_io'] / data['network_latency'])
+# Load the training dataset to recreate LabelEncoder
+train_data = pd.read_csv(TRAIN_DATA_PATH)
 
-    # Rolling Averages (ensure no data leakage)
-    window_size = 5
-    data['cpu_usage_rolling_avg'] = data['node_cpu_usage'].rolling(window=window_size, min_periods=1).mean().shift(1)
-    data['memory_usage_rolling_avg'] = data['node_memory_usage'].rolling(window=window_size, min_periods=1).mean().shift(1)
+# Recreate the LabelEncoder
+failure_label_encoder = LabelEncoder()
+failure_label_encoder.fit(train_data["failure_type"])
 
-    # Handle NaN values created by shifting
-    data['cpu_usage_rolling_avg'] = data['cpu_usage_rolling_avg'].ffill()
-    data['memory_usage_rolling_avg'] = data['memory_usage_rolling_avg'].ffill()
-
-    return data
-
-# Select relevant features for prediction (same as during training)
-features = [
-    'cpu_allocation_efficiency', 'memory_allocation_efficiency',
-    'disk_io', 'network_latency', 'node_cpu_usage',
-    'node_memory_usage', 'cpu_usage_avg', 'memory_usage_avg',
-    'cpu_memory_ratio', 'disk_network_ratio',
-    'cpu_usage_rolling_avg', 'memory_usage_rolling_avg'
-]
-
-# Load the cleaned and labeled dataset
+# Load the validation dataset
 data = pd.read_csv(DATA_PATH)
+data = data.drop(columns=["failure_type", "timestamp", "event_type"])
 
-# Preprocess the data (compute derived features)
-data = preprocess_data(data)
+# Encode categorical columns
+categorical_columns = ["pod_name", "namespace", "event_message"]
+label_encoders = {}
 
-# Load the trained failure prediction model
+for col in categorical_columns:
+    le = LabelEncoder()
+    data[col] = le.fit_transform(data[col])
+    label_encoders[col] = le  # Store for inverse transformation if needed
+
+# Load the trained model
 model = joblib.load(MODEL_PATH)
 
 # Predict failures
-data['predicted_failure'] = model.predict(data[features])
+data['predicted_failure'] = model.predict(data)
+
+# Convert predicted values back to original failure type labels
+data['predicted_failure_label'] = failure_label_encoder.inverse_transform(data['predicted_failure'])
 
 # Save the results
 data.to_csv(SAVE_DATA_PATH, index=False)
 
-# Visualize anomalies (if timestamp is available)
-if 'timestamp' in data.columns:
-    plt.figure(figsize=(10, 6))
-    plt.plot(data['timestamp'], data['node_cpu_usage'], label='Node CPU Usage')
-    
-    # Highlight predicted failures (adjust based on your failure types)
-    failure_types = ['cpu_exhaustion', 'memory_exhaustion']  # Example failure types
-    for failure_type in failure_types:
-        failures = data[data['predicted_failure'] == failure_type]
-        plt.scatter(failures['timestamp'], failures['node_cpu_usage'], label=f'{failure_type} (Predicted)')
-    
-    plt.legend()
-    plt.xlabel('Time')
-    plt.ylabel('CPU Usage')
-    plt.title('Node CPU Usage with Predicted Failures')
-    plt.show()
-else:
-    print("Timestamp column not found. Visualization skipped.")
+print("Predictions saved with original failure labels!")
+

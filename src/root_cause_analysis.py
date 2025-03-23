@@ -34,7 +34,7 @@ except FileNotFoundError:
 required_columns = [
     'pod_name', 'namespace', 'cpu_allocation_efficiency', 'memory_allocation_efficiency',
     'disk_io', 'network_latency', 'node_temperature', 'node_cpu_usage', 'node_memory_usage',
-    'event_type', 'event_message', 'scaling_event', 'pod_lifetime_seconds', 'predicted_failure'
+   'event_message', 'scaling_event', 'pod_lifetime_seconds', 'predicted_failure_label'
 ]
 missing_columns = [col for col in required_columns if col not in data.columns]
 if missing_columns:
@@ -42,17 +42,17 @@ if missing_columns:
     exit(1)
 
 # Filter rows with predicted failures
-failures = data[data['predicted_failure'].notnull()]
+failures = data[data['predicted_failure_label'].notnull()]
 
 # Initialize the output CSV file
 if not os.path.exists(OUTPUT_PATH):
     # Create the CSV file with headers if it doesn't exist
-    pd.DataFrame(columns=['pod_name', 'namespace', 'predicted_failure', 'root_cause_analysis']).to_csv(OUTPUT_PATH, index=False)
+    pd.DataFrame(columns=['pod_name', 'namespace', 'predicted_failure_label', 'root_cause_analysis']).to_csv(OUTPUT_PATH, index=False)
 
 # Analyze each failure
 for index, row in failures.iterrows():
     # Skip API call if the predicted failure is 'normal'
-    if row['predicted_failure'] == 'normal':
+    if row['predicted_failure_label'] == 'normal':
         logging.info(f"Skipping pod {row['pod_name']} (Predicted Failure: Normal)")
         continue  # Skip to the next iteration
 
@@ -67,11 +67,10 @@ for index, row in failures.iterrows():
     - Node Temperature: {row['node_temperature']}
     - Node CPU Usage: {row['node_cpu_usage']}
     - Node Memory Usage: {row['node_memory_usage']}
-    - Event Type: {row['event_type']}
     - Event Message: {row['event_message']}
     - Scaling Event: {row['scaling_event']}
     - Pod Lifetime: {row['pod_lifetime_seconds']} seconds
-    - Predicted Failure: {row['predicted_failure']}
+    - Predicted Failure: {row['predicted_failure_label']}
 
     Analyze the root cause of the predicted failure and provide actionable recommendations.
     """
@@ -91,7 +90,7 @@ for index, row in failures.iterrows():
         result = {
             'pod_name': row['pod_name'],
             'namespace': row['namespace'],
-            'predicted_failure': row['predicted_failure'],
+            'predicted_failure_label': row['predicted_failure_label'],
             'root_cause_analysis': response.text
         }
         pd.DataFrame([result]).to_csv(OUTPUT_PATH, mode='a', header=False, index=False)
