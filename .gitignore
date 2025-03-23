@@ -20,9 +20,6 @@ __pycache__/
 *.swp
 *.swo
 
-# Model files
-model/*.pkl
-*.pkl
 
 # Distribution / packaging
 dist/

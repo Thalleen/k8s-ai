@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent  # Adjust if running from a di
 DATA_PATH = BASE_DIR / "data" / "k8s_cleaned_labeled.csv"
 MODEL_PATH = BASE_DIR / "model" / "failure_prediction_model.pkl"
 
-# Load dataset
+
 data = pd.read_csv(DATA_PATH)
 
 # Fix FutureWarning (Pandas 3.0 issue)
@@ -35,10 +35,10 @@ data['memory_usage_rolling_avg'] = np.convolve(data['node_memory_usage'], np.one
 
 # Features & Target
 features = [
-    'cpu_allocation_efficiency', 'memory_allocation_efficiency', 
-    'disk_io', 'network_latency', 'node_cpu_usage', 
+    'cpu_allocation_efficiency', 'memory_allocation_efficiency',
+    'disk_io', 'network_latency', 'node_cpu_usage',
     'node_memory_usage', 'cpu_usage_avg', 'memory_usage_avg',
-    'cpu_memory_ratio', 'disk_network_ratio', 
+    'cpu_memory_ratio', 'disk_network_ratio',
     'cpu_usage_rolling_avg', 'memory_usage_rolling_avg'
 ]
 X = data[features]
@@ -67,6 +67,5 @@ print("Classification Report:")
 print(classification_report(y_test, y_pred))
 
 # Save the trained model
-MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
 joblib.dump(model, MODEL_PATH)
 print(f"Trained model saved at: {MODEL_PATH}")
