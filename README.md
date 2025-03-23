@@ -32,6 +32,9 @@ k8s-AI/
 ├── README.md                    # Project documentation
 ```
 
+### Demo Video
+[Click Here!](https://drive.google.com/drive/folders/1Y7xSzqEnOOqjxzpnyzIdGuORKQVFXzHJ?usp=sharing)
+
 ### 📥 **Dataset**  
 Download the dataset from [Kaggle](https://www.kaggle.com/datasets/nickkinyae/kubernetes-resource-and-performancemetricsallocation?select=kubernetes_performance_metrics_dataset.csv) and place it inside the `data/` directory.  
 
