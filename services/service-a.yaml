@@ -1,0 +1,38 @@
+#this is a service with Rolling Updates 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-a-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: service-a
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 4  # Allow up to 4 extra pods during the update
+      maxUnavailable: 0  # Ensure no pods are unavailable during the update
+  template:
+    metadata:
+      labels:
+        app: service-a
+    spec:
+      containers:
+      - name: service-a-container
+        image: nginx
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-a-service
+spec:
+  selector:
+    app: service-a
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: NodePort
