@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2025-04-09T17:35:51.209695",
+    "issue": "cpu_exhaustion",
+    "pod": "demo-deploy",
+    "namespace": "default",
+    "remediation": "bash scripts/scale_cpu.sh demo-deploy",
+    "explanation": "The predicted failure is `cpu_exhaustion`, driven by high CPU usage and low allocation efficiency...."
+  }
+]
