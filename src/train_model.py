@@ -12,7 +12,7 @@ from pathlib import Path
 # Define dataset and model paths relative to the script's location
 BASE_DIR = Path(__file__).resolve().parent.parent  # Adjust if running from a different directory
 DATA_PATH = BASE_DIR / "data" / "kubernetes_performance_metrics_dataset.csv"
-MODEL_PATH = BASE_DIR / "model" / "failure_prediction_model.pkl"
+MODEL_PATH = BASE_DIR / "model" / "RFC_prediction_model.pkl"
 
 data = pd.read_csv(DATA_PATH)
 

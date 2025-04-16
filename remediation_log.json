@@ -1,0 +1,2394 @@
+[
+  {
+    "timestamp": "2025-04-09T17:26:25.921497",
+    "issue": "pod_termination",
+    "pod": 144,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 144",
+    "explanation": "The predicted pod termination (`pod_termination`) suggests a problem with the pods themselves, likely related to resource constraints or internal errors, despite relatively low overall node resource utilization.  Let's break down the metrics and identify potential root causes:\n\n**Suspect Areas:**\n\n*..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:25.987693",
+    "issue": "network_latency_issue",
+    "pod": 2113,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 2113",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`,  indicated by a high Network Latency metric (173.9100156). While other metrics provide context, the high latency is the primary driver of the prediction.  Let's analyze further:\n\n**Root Cause Analysis:**\n\nThe high network latency (173.9..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.038263",
+    "issue": "pod_failure",
+    "pod": 4989,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 4989",
+    "explanation": "The predicted pod failure is likely due to a combination of factors, rather than a single root cause.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.0186):**  This is extremely low. It means the pod is only using a tiny fraction of the CPU resources allocated ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.137332",
+    "issue": "pod_termination",
+    "pod": 1054,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 1054",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 1054 in Namespace 0 suggests a resource exhaustion issue, potentially exacerbated by high network latency. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Extremely Low Memory Allocation Efficiency (0.015):** This is the most alarming ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.183445",
+    "issue": "pod_failure",
+    "pod": 3568,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 3568",
+    "explanation": "The provided metrics suggest a potential pod failure (predicted as `pod_failure`), likely due to resource contention and possibly a scaling issue. Let's break down the contributing factors:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.686):** This is relatively low.  It means that the ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.238097",
+    "issue": "memory_exhaustion",
+    "pod": 3292,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 3292",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this prediction.  Let's break down the contributing factors and propose actionable recommendations:\n\n**Root Cause Analysis:**\n\n* **Critically Low Memory Allocation Efficiency (0.091465956):** This is the most significant ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.325023",
+    "issue": "pod_termination",
+    "pod": 1127,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 1127",
+    "explanation": "The predicted pod termination (`pod_termination`) for Pod 1127 in Namespace 3 suggests a resource exhaustion problem, potentially exacerbated by high network latency. Let's break down the metrics:\n\n**Problematic Metrics:**\n\n* **Memory Allocation Efficiency (0.3035):** This is extremely low.  It mean..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.368053",
+    "issue": "memory_exhaustion",
+    "pod": 4357,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4357",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4357 in Namespace 1.  Let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\nThe primary indicator is the low **Memory Allocation Efficiency (0.56)**. This means the pod is only utilizing 56% of its allocated memory, suggesting either ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.456146",
+    "issue": "pod_termination",
+    "pod": 1282,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 1282",
+    "explanation": "The predicted pod termination (`pod_termination`) for Pod 1282 in Namespace 1 suggests a resource exhaustion issue, potentially exacerbated by high network latency.  Let's break down the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.18):** This is extremely low.  It means the p..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.501869",
+    "issue": "network_latency_issue",
+    "pod": 1035,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 1035",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  Let's analyze the provided metrics to understand why this is likely and propose actionable steps:\n\n**Analysis:**\n\n* **High Network Latency (185.80):** This is the most significant indicator. A latency of 185.80 (units unspecified, like..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.616295",
+    "issue": "pod_termination",
+    "pod": 4616,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 4616",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, rather than a single root cause.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **Memory Allocation Efficiency (0.1224):** This is extremely low.  It means the pod is only using 12% of its allocated..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.663318",
+    "issue": "memory_exhaustion",
+    "pod": 2612,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 2612",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this prediction.  Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.50):** This is the most critical indicator.  It means that only 50% of the allocated memory i..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.710472",
+    "issue": "cpu_exhaustion",
+    "pod": 3534,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 3534",
+    "explanation": "The predicted failure is `cpu_exhaustion`, driven by the extremely low CPU allocation efficiency (0.056) and very high Node CPU Usage (94.2%).  Let's break down the root cause and recommendations:\n\n**Root Cause Analysis:**\n\n* **Low CPU Allocation Efficiency (0.056):** This indicates the pod (3534) i..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.753852",
+    "issue": "pod_failure",
+    "pod": 3666,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 3666",
+    "explanation": "The predicted pod failure (pod_failure) with Pod ID 3666 in Namespace 3 suggests a resource constraint issue, potentially exacerbated by high node temperature and potentially slow network latency. Let's break down the contributing factors:\n\n\n**Contributing Factors:**\n\n* **Low Resource Allocation Eff..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.843976",
+    "issue": "pod_termination",
+    "pod": 144,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 144",
+    "explanation": "The predicted pod termination (`pod_termination`) suggests a problem with the pods themselves, possibly exacerbated by resource constraints and potentially influenced by high disk I/O.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.9175):** This is relatively ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.887277",
+    "issue": "cpu_exhaustion",
+    "pod": 2320,
+    "namespace": 2,
+    "remediation": "bash scripts/scale_cpu.sh 2320",
+    "explanation": "The predicted failure is `cpu_exhaustion`, strongly indicated by the extremely high Node CPU Usage (98.79%).  While other metrics offer context, the CPU usage is the primary driver.\n\n**Root Cause Analysis:**\n\nThe system is suffering from severe CPU resource exhaustion.  The Node is almost completely..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.933654",
+    "issue": "network_latency_issue",
+    "pod": 1062,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 1062",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 175.9092911 (units unspecified, but likely milliseconds or similar).  While other metrics are elevated, they don't directly explain the predicted failure.  Let's analyze:\n\n**Root Cause Analysis:**\n\nThe high net..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:26.987660",
+    "issue": "cpu_exhaustion",
+    "pod": 4428,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 4428",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly supported by the metrics. Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Critically High Node CPU Usage:**  The Node CPU Usage is at 99.59%, extremely close to 100%. This indicates the node is severely overloaded, leavin..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.039106",
+    "issue": "memory_exhaustion",
+    "pod": 2338,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 2338",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics support this conclusion.  Let's break down the contributing factors and propose solutions:\n\n**Root Cause Analysis:**\n\nThe primary indicator is the extremely low **Memory Allocation Efficiency (0.1832)**. This means that only about 18% of ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.087231",
+    "issue": "memory_exhaustion",
+    "pod": 183,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 183",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this.  Let's analyze:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage (95.54%):** This is the most critical indicator. The node is almost completely out of memory.  This directly points to the memory exhaustion pred..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.144437",
+    "issue": "pod_failure",
+    "pod": 4801,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 4801",
+    "explanation": "The predicted failure for Pod 4801 in Namespace 0 points towards resource exhaustion and potential network issues as the primary suspects. Let's analyze the metrics:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.129):** This is extremely low.  It means the pod is only utilizing a sm..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.195477",
+    "issue": "pod_failure",
+    "pod": 2160,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 2160",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors, primarily resource exhaustion on the node and potentially a scaling issue. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Node CPU Usage (95.24%):** This is extremely high, indicating the node is severely ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.244846",
+    "issue": "memory_exhaustion",
+    "pod": 1412,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1412",
+    "explanation": "The predicted failure is `memory_exhaustion` despite relatively low Node Memory Usage (10.16%).  This suggests a problem with *how* memory is being used, rather than a simple lack of available memory on the node. The low CPU Allocation Efficiency (0.27) and high Disk I/O (63.57) point towards potent..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.327528",
+    "issue": "network_latency_issue",
+    "pod": 3172,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 3172",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 187.055 seconds.  While other metrics are elevated (Node CPU Usage, Node Memory Usage, Disk I/O), the prediction specifically points to network latency as the root cause.\n\n**Root Cause Analysis:**\n\nThe high net..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.369542",
+    "issue": "memory_exhaustion",
+    "pod": 3757,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 3757",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this. Let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.32):** This is the most significant indicator.  The pod is only using 32% of its allocated memory. This sugg..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.408850",
+    "issue": "pod_failure",
+    "pod": 2980,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 2980",
+    "explanation": "The predicted pod failure is likely due to a combination of factors, primarily stemming from high node resource utilization and potentially inefficient pod resource allocation. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **High Node CPU Usage (97.32%):** This is extremely high and indicat..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.490721",
+    "issue": "pod_termination",
+    "pod": 1633,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 1633",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, with resource exhaustion being the primary suspect. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **High Node Resource Utilization:**  The node is severely stressed.  `Node CPU Usage` (62.24%) and e..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.530768",
+    "issue": "memory_exhaustion",
+    "pod": 2773,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 2773",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 2773 in Namespace 2.  Let's analyze the contributing factors from the provided Kubernetes metrics:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.845):** This is relatively high, suggesting the pod is using a significant portion of its ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.624574",
+    "issue": "pod_termination",
+    "pod": 3833,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 3833",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, with low memory allocation efficiency being the most prominent suspect. Let's analyze the metrics:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.2375):** This indicates the pod is only using..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.674063",
+    "issue": "network_latency_issue",
+    "pod": 1555,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 1555",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  Let's analyze the provided metrics to understand why this prediction was made and what actions can be taken:\n\n**Analysis:**\n\n* **High Network Latency:** The most significant indicator is the `Network Latency` of 151.26 seconds. This is..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.713513",
+    "issue": "cpu_exhaustion",
+    "pod": 4935,
+    "namespace": 3,
+    "remediation": "bash scripts/scale_cpu.sh 4935",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly indicated by the Kubernetes metrics provided.  Let's break down the contributing factors and propose actionable recommendations:\n\n**Root Cause Analysis:**\n\n* **High Node CPU Usage (98.24%):** This is the primary culprit. The node is extremely clos..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.765024",
+    "issue": "memory_exhaustion",
+    "pod": 4032,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4032",
+    "explanation": "The prediction points to a `memory_exhaustion` failure for Pod 4032 in Namespace 1.  Let's analyze the metrics to understand why:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.787):** This is relatively high, suggesting the pod is using a significant portion of its allocated memory. Whil..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.814123",
+    "issue": "cpu_exhaustion",
+    "pod": 468,
+    "namespace": 3,
+    "remediation": "bash scripts/scale_cpu.sh 468",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly indicated by the extremely high Node CPU Usage (99.17%).  While other metrics provide context, they don't directly cause the predicted failure; they might be *consequences* of it or contribute to the overall system instability. Let's break down th..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.921600",
+    "issue": "disk_io_bottleneck",
+    "pod": 1269,
+    "namespace": 2,
+    "remediation": "bash scripts/move_pod.sh 1269",
+    "explanation": "The predicted failure is attributed to a `disk_io_bottleneck`.  Let's analyze the metrics to understand why:\n\n**Key Indicators:**\n\n* **Disk I/O: 996.4793431:** This exceptionally high value is the primary culprit.  The unit is unclear (e.g., IOPS, MB/s), but the magnitude suggests significant disk c..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:27.968163",
+    "issue": "memory_exhaustion",
+    "pod": 4748,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4748",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4748 in Namespace 1.  Let's analyze the metrics to understand the root cause and suggest actionable recommendations.\n\n**Analysis:**\n\nThe key indicator is the low `Memory Allocation Efficiency` (0.26). This means the pod is only utilizing 26% of it..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.014075",
+    "issue": "pod_failure",
+    "pod": 3850,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 3850",
+    "explanation": "The provided metrics suggest a potential pod failure, but pinpointing the *root cause* requires more context and investigation.  The data shows several potentially problematic areas, but none are definitively the culprit.  Let's break down the suspicious metrics and propose actions:\n\n**Suspicious Me..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.059093",
+    "issue": "memory_exhaustion",
+    "pod": 1356,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1356",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite relatively low overall Node Memory Usage (29%).  The key indicator is the extremely low **Memory Allocation Efficiency (0.218679174)**.  This means that while the node has free memory, the pods aren't effectively utilizing it.  This suggests a pr..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.106376",
+    "issue": "pod_failure",
+    "pod": 2723,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 2723",
+    "explanation": "The prediction of `pod_failure` for Pod 2723 in Namespace 1 suggests a resource contention issue, possibly exacerbated by scaling events. Let's break down the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.6699):** This is relatively low.  It means the pod isn't utilizing its al..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.153107",
+    "issue": "memory_exhaustion",
+    "pod": 749,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 749",
+    "explanation": "The predicted failure, `memory_exhaustion`, is strongly supported by the metrics provided. Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Critically High Node Memory Usage (99.79858593%):** This is the most significant indicator.  The system is almost completely out of mem..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.202270",
+    "issue": "memory_exhaustion",
+    "pod": 1047,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1047",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 1047 in Namespace 0.  Let's analyze the contributing factors:\n\n**Analysis:**\n\n* **Low Memory Allocation Efficiency (0.57):** This is a strong indicator of the problem.  The pod is only using 57% of its allocated memory. This suggests either the po..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.301787",
+    "issue": "pod_termination",
+    "pod": 3659,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 3659",
+    "explanation": "The provided metrics suggest a potential resource exhaustion issue leading to the predicted pod termination (`pod_termination`). While no single metric screams \"failure,\" the combination paints a picture.  Let's break it down:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.849):**  This ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.348906",
+    "issue": "memory_exhaustion",
+    "pod": 2702,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 2702",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 2702 in Namespace 2.  Let's analyze the metrics to understand the root cause and propose solutions:\n\n**Analysis:**\n\n* **Low Memory Allocation Efficiency (0.64):** This is the most significant indicator.  The pod is only using 64% of its allocated ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.443533",
+    "issue": "overheating",
+    "pod": 2019,
+    "namespace": 2,
+    "remediation": "bash scripts/evacuate_node.sh 2019",
+    "explanation": "The predicted failure is \"overheating,\" and while the Node Temperature (80.97\u00b0C) is high and a significant contributing factor, it's crucial to investigate why it's so high.  The other metrics provide clues.\n\n**Root Cause Analysis:**\n\nThe high node temperature (80.97\u00b0C) is likely the direct cause of..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.489521",
+    "issue": "network_latency_issue",
+    "pod": 2076,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 2076",
+    "explanation": "The predicted failure, \"network_latency_issue,\" is strongly supported by the high Network Latency metric (169.8870827).  While other metrics show some resource constraints, the network latency is the most significant indicator pointing to the root cause.  Let's analyze the contributing factors and s..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.537576",
+    "issue": "pod_failure",
+    "pod": 4646,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 4646",
+    "explanation": "The predicted pod failure (pod_failure) for pod 4646 in namespace 3 is likely due to a combination of factors, primarily resource starvation and potential underlying issues indicated by high disk I/O and scaling events. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Low Memory Allocation E..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.584905",
+    "issue": "pod_failure",
+    "pod": 103,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 103",
+    "explanation": "The provided metrics suggest a potential pod failure (`pod_failure`), but pinpointing the *exact* root cause requires more context.  The data indicates several areas of concern, and it's likely a combination of factors, rather than a single culprit. Let's break down the suspicious metrics and propos..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.630697",
+    "issue": "pod_failure",
+    "pod": 1114,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 1114",
+    "explanation": "The prediction of pod failure (pod 1114 in namespace 1) is likely due to a combination of factors, rather than a single root cause. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **Low CPU Allocation Efficiency (0.457):**  This indicates the pod isn't effectively utilizing its allocated CPU ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.681195",
+    "issue": "pod_failure",
+    "pod": 1674,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 1674",
+    "explanation": "The Kubernetes metrics suggest a potential pod failure (predicted as `pod_failure`) due to a combination of factors, primarily resource contention and potentially overheating hardware. Let's break down the contributing factors:\n\n**Critical Factors:**\n\n* **High Node Resource Utilization:**  The node ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.727657",
+    "issue": "pod_failure",
+    "pod": 121,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 121",
+    "explanation": "The predicted pod failure is likely due to a combination of factors, rather than a single root cause.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.0495):** This is extremely low.  It means your pods are only using a tiny fraction of the CPU resources allocat..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.783535",
+    "issue": "pod_failure",
+    "pod": 3157,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 3157",
+    "explanation": "The prediction of `pod_failure` for Pod 3157 in Namespace 2 is likely due to a combination of factors, not a single, isolated cause. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.6489):** While not critically low, this indicates the pod isn't using its allocat..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.898304",
+    "issue": "disk_io_bottleneck",
+    "pod": 2362,
+    "namespace": 3,
+    "remediation": "bash scripts/move_pod.sh 2362",
+    "explanation": "The predicted failure is a `disk_io_bottleneck`, indicated by the high Disk I/O value (972.21).  While other metrics show resource pressure (high CPU and memory usage on the node), the prediction specifically points to disk I/O as the primary cause of the impending failure.\n\n**Root Cause Analysis:**..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:28.987840",
+    "issue": "pod_termination",
+    "pod": 3375,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 3375",
+    "explanation": "The prediction of `pod_termination` with the given Kubernetes metrics points to a likely resource exhaustion issue, specifically related to CPU. Let's break down the metrics:\n\n**Critical Metrics:**\n\n* **CPU Allocation Efficiency (0.2666997):** This is extremely low.  It means that only about 27% of ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.033962",
+    "issue": "cpu_exhaustion",
+    "pod": 1666,
+    "namespace": 2,
+    "remediation": "bash scripts/scale_cpu.sh 1666",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is directly indicated by the high Node CPU Usage (90.03%) coupled with a relatively low CPU Allocation Efficiency (0.67).  This means that while a significant portion of the node's CPU is being used, the pods aren't effectively utilizing the allocated resourc..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.080773",
+    "issue": "network_latency_issue",
+    "pod": 2256,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 2256",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, supported by a high Network Latency metric (157.6427601). While other metrics are noteworthy, they don't directly point to the root cause of the predicted network problem.  Let's break down the analysis and recommendations:\n\n**Analysis:..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.186511",
+    "issue": "pod_termination",
+    "pod": 3882,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 3882",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, primarily stemming from high resource utilization on the node and potentially insufficient resource allocation to the pod itself. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **High Node CPU Usage ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.285223",
+    "issue": "pod_termination",
+    "pod": 358,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 358",
+    "explanation": "The predicted `pod_termination` is likely due to a combination of factors, rather than a single, obvious cause. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.0714):**  This is extremely low.  It means that the pods are only using a tiny fraction of the CPU res..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.331717",
+    "issue": "network_latency_issue",
+    "pod": 2113,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 2113",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 173.91 seconds.  While other metrics offer context, the high network latency is the primary driver of the prediction.\n\n**Root Cause Analysis:**\n\nThe high network latency (173.91 seconds) is significantly proble..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.376720",
+    "issue": "network_latency_issue",
+    "pod": 2113,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 2113",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 173.9100156 (units unspecified, likely milliseconds).  While other metrics are present, the prediction directly points to network latency as the culprit.  Let's analyze this and suggest actionable steps:\n\n**Roo..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.417011",
+    "issue": "pod_failure",
+    "pod": 4989,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 4989",
+    "explanation": "The prediction of `pod_failure` is based on several concerning metrics, suggesting a resource starvation issue combined with potential underlying hardware problems.  Let's break down the problematic areas:\n\n**Critical Issues:**\n\n* **Extremely Low Allocation Efficiency:**  Both CPU (0.0186) and Memor..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.510460",
+    "issue": "pod_termination",
+    "pod": 1054,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 1054",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 1054 in Namespace 0 suggests a resource exhaustion issue, potentially compounded by other factors.  Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Extremely Low Memory Allocation Efficiency (0.015):** This is the most glaring problem...."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.569501",
+    "issue": "pod_failure",
+    "pod": 3568,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 3568",
+    "explanation": "The provided metrics suggest a potential pod failure (predicted as `pod_failure`), although the exact root cause isn't definitively clear from this data alone.  Several factors warrant investigation:\n\n**Suspect Areas and Analysis:**\n\n* **Low CPU Allocation Efficiency (0.686):** This indicates the po..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.614498",
+    "issue": "memory_exhaustion",
+    "pod": 3292,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 3292",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the Kubernetes metrics strongly support this.  Let's break down the contributing factors and suggest actions:\n\n**Root Cause Analysis:**\n\n* **Extremely Low Memory Allocation Efficiency (0.091465956):** This is the most significant indicator.  It means..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.706968",
+    "issue": "pod_termination",
+    "pod": 1127,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 1127",
+    "explanation": "The predicted pod termination (pod_termination) is likely due to a combination of factors, rather than a single root cause.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **Low Memory Allocation Efficiency (0.30):** This is critically low.  It means the pod is only using 30% of its allocate..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.755184",
+    "issue": "memory_exhaustion",
+    "pod": 4357,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4357",
+    "explanation": "The predicted failure, \"memory_exhaustion,\" is strongly indicated by the low Memory Allocation Efficiency (0.56) coupled with high Node Memory Usage (65.2%).  While other metrics might contribute to overall system instability, they are secondary to this core issue.\n\n**Root Cause Analysis:**\n\nThe pri..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.855240",
+    "issue": "pod_termination",
+    "pod": 1282,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 1282",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 1282 in Namespace 1 suggests a resource exhaustion issue, potentially exacerbated by high network latency. Let's break down the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.18):**  This is extremely low.  It means the pod..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:29.902504",
+    "issue": "network_latency_issue",
+    "pod": 1035,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 1035",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 185.8021021 (units unspecified, but presumably high).  While other metrics show some strain (high Node CPU Usage, moderate Disk I/O), the prediction directly points to network latency as the primary culprit.\n\n*..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.010649",
+    "issue": "pod_termination",
+    "pod": 4616,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 4616",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors indicated by the metrics, rather than a single root cause. Let's analyze the key contributors:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.1224):** This is extremely low and suggests the po..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.056534",
+    "issue": "memory_exhaustion",
+    "pod": 2612,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 2612",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this.  Let's break down the contributing factors and propose solutions:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.50):** This is the most critical indicator.  It means that only 50% of the allocat..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.103047",
+    "issue": "cpu_exhaustion",
+    "pod": 3534,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 3534",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is clearly indicated by the extremely high Node CPU Usage (94.24%).  While other metrics might contribute to overall system instability, the primary culprit is the lack of CPU resources available on the node.  Let's break down the contributing factors and pro..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.145644",
+    "issue": "pod_failure",
+    "pod": 3666,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 3666",
+    "explanation": "The predicted pod failure (pod_failure) is likely multi-faceted, stemming from a combination of resource constraints and potential underlying issues.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **Low CPU Allocation Efficiency (0.796):**  This suggests the pod isn't utilizing its allocate..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.236137",
+    "issue": "pod_termination",
+    "pod": 144,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 144",
+    "explanation": "The prediction of `pod_termination` based on the provided Kubernetes metrics suggests a potential resource exhaustion issue, possibly exacerbated by high disk I/O and network latency. Let's break down the contributing factors:\n\n**Contributing Factors:**\n\n* **Low Memory Allocation Efficiency (0.63):*..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.283381",
+    "issue": "cpu_exhaustion",
+    "pod": 2320,
+    "namespace": 2,
+    "remediation": "bash scripts/scale_cpu.sh 2320",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is clearly indicated by the extremely high Node CPU Usage (98.8%).  While other metrics contribute to the overall system health, the near-100% CPU usage is the dominant factor driving the prediction.\n\n**Root Cause Analysis:**\n\nThe system is suffering from CPU..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.329877",
+    "issue": "network_latency_issue",
+    "pod": 1062,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 1062",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  Let's analyze the provided metrics to understand why this is likely the case and suggest actionable steps.\n\n**Analysis:**\n\n* **High Network Latency:** The most significant indicator is the `Network Latency` of 175.91 seconds. This is e..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.373799",
+    "issue": "cpu_exhaustion",
+    "pod": 4428,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 4428",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is clearly indicated by the extremely high Node CPU Usage (99.59%).  While other metrics offer context, the near-100% CPU usage is the primary driver. Let's break down the contributing factors and actionable recommendations:\n\n**Root Cause Analysis:**\n\n* **Hig..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.417438",
+    "issue": "memory_exhaustion",
+    "pod": 2338,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 2338",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this.  Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.1832):** This is the most significant indicator.  It means that only about 18% of the allocated memory i..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.464953",
+    "issue": "memory_exhaustion",
+    "pod": 183,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 183",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this prediction.  Let's break down the contributing factors:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.657):** This is relatively low.  It means that only about 66% of allocated memory is actually being us..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.511262",
+    "issue": "pod_failure",
+    "pod": 4801,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 4801",
+    "explanation": "The prediction of pod failure (pod 4801 in namespace 0) is likely due to a combination of factors, rather than a single root cause. Let's analyze the metrics:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.129):** This is the most alarming metric.  It indicates the pod is only using ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.557956",
+    "issue": "pod_failure",
+    "pod": 2160,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 2160",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors, primarily resource exhaustion on the node and potentially underlying application issues. Let's analyze the metrics:\n\n**Critical Issues:**\n\n* **High Node CPU Usage (95.24%):** This is extremely high and indicates the..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.605024",
+    "issue": "memory_exhaustion",
+    "pod": 1412,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1412",
+    "explanation": "The predicted failure is `memory_exhaustion` despite relatively low Node Memory Usage (10.16%).  This suggests a problem with how memory is allocated and used *within* the pod (Pod 1412 in Namespace 0), not necessarily a cluster-wide memory shortage.  The low CPU Allocation Efficiency (0.27) also hi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.668056",
+    "issue": "network_latency_issue",
+    "pod": 3172,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 3172",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, indicated by a high Network Latency metric (187.055 seconds).  While other metrics are elevated, they don't directly explain the predicted failure. Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\nThe high N..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.716026",
+    "issue": "memory_exhaustion",
+    "pod": 3757,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 3757",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this prediction.  Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.32):** This is the most critical indicator.  It means that only about 32% of the allocated me..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.767186",
+    "issue": "pod_failure",
+    "pod": 2980,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 2980",
+    "explanation": "The predicted pod failure is likely due to a combination of factors, primarily resource exhaustion on the node and potentially a scaling issue. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Node CPU Usage (97.32%):** This is extremely high and indicates the node is severely overloaded.  P..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.856170",
+    "issue": "pod_termination",
+    "pod": 1633,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 1633",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, primarily resource constraints and potentially underlying node issues. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **High Node Resource Utilization:**  The node is severely stressed.  95.23% memor..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.894720",
+    "issue": "memory_exhaustion",
+    "pod": 2773,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 2773",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively high Memory Allocation Efficiency (0.845). This apparent contradiction suggests a potential issue with the *available* memory on the node, rather than inefficient memory usage within the pods themselves.\n\n**Root Cause Analysis:**\n\n* ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:30.986826",
+    "issue": "pod_termination",
+    "pod": 3833,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 3833",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely caused by a combination of factors, primarily resource constraints and potential underlying node issues. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.2375):** This is extremely low.  It indica..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.033533",
+    "issue": "network_latency_issue",
+    "pod": 1555,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 1555",
+    "explanation": "The predicted failure, \"network_latency_issue,\" is directly attributed to the high Network Latency metric (151.2627954).  While other metrics are elevated, they're less likely to be the primary cause of this specific prediction. Let's break down the analysis and recommendations:\n\n**Root Cause Analys..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.076624",
+    "issue": "cpu_exhaustion",
+    "pod": 4935,
+    "namespace": 3,
+    "remediation": "bash scripts/scale_cpu.sh 4935",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly indicated by the high Node CPU Usage (98.24%) coupled with relatively low CPU Allocation Efficiency (0.58).  Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\n* **High Node CPU Usage (98.24%):** This is the primary driv..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.141557",
+    "issue": "memory_exhaustion",
+    "pod": 4032,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4032",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4032 in Namespace 1.  While the overall Node memory usage is high (93.9%), the key indicator pointing to this specific pod's failure is the **low Memory Allocation Efficiency (0.787)**. This means the pod is only effectively using 78.7% of its all..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.193596",
+    "issue": "cpu_exhaustion",
+    "pod": 468,
+    "namespace": 3,
+    "remediation": "bash scripts/scale_cpu.sh 468",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is clearly indicated by the extremely high Node CPU Usage (99.17%).  While other metrics offer context, the near-100% CPU utilization is the primary culprit. Let's break down the contributing factors and propose solutions:\n\n**Root Cause Analysis:**\n\n* **High ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.296512",
+    "issue": "disk_io_bottleneck",
+    "pod": 1269,
+    "namespace": 2,
+    "remediation": "bash scripts/move_pod.sh 1269",
+    "explanation": "The predicted failure is attributed to a `disk_io_bottleneck`.  Let's analyze the provided metrics to understand why:\n\n**Key Indicators:**\n\n* **Disk I/O: 996.4793431:** This extremely high value is the primary indicator of the problem.  The units are unclear (likely IOPS or some other measure of dis..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.337215",
+    "issue": "memory_exhaustion",
+    "pod": 4748,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4748",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4748 in Namespace 1.  Let's analyze the metrics to pinpoint the root cause and propose solutions:\n\n**Analysis:**\n\n* **Low Memory Allocation Efficiency (0.26):** This is the most critical indicator.  The pod is only using 26% of its allocated memor..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.376984",
+    "issue": "pod_failure",
+    "pod": 3850,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 3850",
+    "explanation": "The provided metrics suggest a potential pod failure, but the root cause isn't immediately obvious from a single data point.  The relatively low CPU Allocation Efficiency (0.67) is the most suspect metric, indicating that the pods aren't using their allocated CPU resources effectively. This, in comb..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.416775",
+    "issue": "memory_exhaustion",
+    "pod": 1356,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1356",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite relatively low overall node memory usage (29.1%).  The key indicator is the extremely low **Memory Allocation Efficiency (0.218679174)**. This means that while the node has plenty of free memory overall, the pods aren't efficiently using the memo..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.458162",
+    "issue": "pod_failure",
+    "pod": 2723,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 2723",
+    "explanation": "The provided metrics suggest a potential pod failure (predicted as `pod_failure`), but pinpointing the *exact* root cause requires further investigation. However, several metrics point to likely contributing factors:\n\n**Suspect Areas & Analysis:**\n\n* **Low Memory Allocation Efficiency (0.25):** This..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.506568",
+    "issue": "memory_exhaustion",
+    "pod": 749,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 749",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this. Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Critically High Node Memory Usage:** The Node Memory Usage is at 99.79%, indicating the node is almost completely out of memory. This is the ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.552564",
+    "issue": "memory_exhaustion",
+    "pod": 1047,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1047",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 1047 in Namespace 0.  While the prediction points to memory, let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.57):** This is the strongest indicator.  The pod is only using 57% of its alloc..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.651840",
+    "issue": "pod_termination",
+    "pod": 3659,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 3659",
+    "explanation": "The provided metrics suggest a potential resource exhaustion or instability issue leading to the predicted pod termination (`pod_termination`). While no single metric screams \"failure,\" the combination points towards several potential problems. Let's analyze:\n\n**Concerning Metrics:**\n\n* **CPU Alloca..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.698261",
+    "issue": "memory_exhaustion",
+    "pod": 2702,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 2702",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 2702 in Namespace 2.  Let's analyze the contributing factors:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.64):** This is significantly low. It means the pod is only using 64% of its allocated memory, suggesting either over-allocation..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.801920",
+    "issue": "overheating",
+    "pod": 2019,
+    "namespace": 2,
+    "remediation": "bash scripts/evacuate_node.sh 2019",
+    "explanation": "The predicted failure is \"overheating,\" and while the event message is 0 (suggesting no direct error messages), several metrics point towards the root cause:\n\n**Root Cause Analysis:**\n\nThe primary indicator is the high **Node Temperature (80.97\u00b0C)**.  This is significantly high and likely exceeding ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.847065",
+    "issue": "network_latency_issue",
+    "pod": 2076,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 2076",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  Let's analyze the provided metrics to understand why this is likely the root cause and formulate actionable recommendations.\n\n**Analysis:**\n\n* **High Network Latency:** The most significant indicator is the `Network Latency` of 169.887..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.897638",
+    "issue": "pod_failure",
+    "pod": 4646,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 4646",
+    "explanation": "The predicted pod failure (pod_failure) is likely due to a combination of factors, primarily resource starvation and potentially a scaling issue exacerbated by high disk I/O. Let's break down the metrics:\n\n**Critical Indicators:**\n\n* **Low Memory Allocation Efficiency (0.24):** This is extremely low..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.943333",
+    "issue": "pod_failure",
+    "pod": 103,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 103",
+    "explanation": "The provided Kubernetes metrics point towards a potential pod failure, but the root cause isn't immediately obvious from a single data point.  The low CPU allocation efficiency is a significant clue, but needs further investigation.  Let's break down the metrics and potential causes:\n\n**Concerning M..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:31.989043",
+    "issue": "pod_failure",
+    "pod": 1114,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 1114",
+    "explanation": "The predicted failure for Pod 1114 in Namespace 1 suggests resource contention and potential underlying issues. Let's analyze the metrics:\n\n**Key Indicators:**\n\n* **Low CPU Allocation Efficiency (0.457):**  The pod is only using 45.7% of its allocated CPU resources. This indicates the pod might be u..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.036348",
+    "issue": "pod_failure",
+    "pod": 1674,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 1674",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors, primarily resource exhaustion on the node and potentially underlying application issues. Let's break down the metrics:\n\n**Critical Indicators:**\n\n* **Node Memory Usage (96.64%):** This is extremely high and indicate..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.086055",
+    "issue": "pod_failure",
+    "pod": 121,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 121",
+    "explanation": "The provided Kubernetes metrics point towards a potential resource starvation issue leading to pod failure, although the exact root cause isn't definitively pinpointed by the data alone. Let's break down the suspicious metrics and propose actionable recommendations:\n\n**Suspicious Metrics and Potenti..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.132229",
+    "issue": "pod_failure",
+    "pod": 3157,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 3157",
+    "explanation": "The provided metrics suggest a potential pod failure (predicted as `pod_failure`), but pinpointing the *exact* root cause requires further investigation.  However, several metrics point towards likely culprits:\n\n**Suspect #1: Low Resource Allocation Efficiency:**\n\n* **CPU Allocation Efficiency (0.64..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.279628",
+    "issue": "disk_io_bottleneck",
+    "pod": 2362,
+    "namespace": 3,
+    "remediation": "bash scripts/move_pod.sh 2362",
+    "explanation": "The predicted failure, \"disk_io_bottleneck,\" is directly indicated by the high Disk I/O metric (972.21).  While other metrics show resource pressure (high CPU and memory usage on the node), the prediction points to disk I/O as the primary culprit.\n\n**Root Cause Analysis:**\n\nThe high Disk I/O value (..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.368071",
+    "issue": "pod_termination",
+    "pod": 3375,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 3375",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, rather than a single root cause. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.2666997):** This is extremely low.  It means your pods are only utilizing a small fracti..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.407946",
+    "issue": "cpu_exhaustion",
+    "pod": 1666,
+    "namespace": 2,
+    "remediation": "bash scripts/scale_cpu.sh 1666",
+    "explanation": "The predicted failure, \"cpu_exhaustion,\" is clearly indicated by the high Node CPU Usage (90.03%) coupled with a relatively low CPU Allocation Efficiency (0.67).  Let's break down the root cause and recommendations:\n\n**Root Cause Analysis:**\n\n* **High Node CPU Usage (90.03%):** This is the primary i..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.455225",
+    "issue": "network_latency_issue",
+    "pod": 2256,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 2256",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, and the supporting metrics strongly suggest this is the primary concern.  While other metrics show potential issues, the high network latency is the most likely culprit leading to the predicted failure.\n\n**Root Cause Analysis:**\n\nThe `N..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.549304",
+    "issue": "pod_termination",
+    "pod": 3882,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 3882",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, primarily resource exhaustion on the node and potentially problematic network latency. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **High Node CPU Usage (95.4%):**  This is extremely high and indi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.648555",
+    "issue": "pod_termination",
+    "pod": 358,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 358",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely not directly caused by a single, overwhelmingly obvious metric, but rather a combination of factors. Let's analyze the provided data:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.0714):** This is extremely low.  It means that ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.746912",
+    "issue": "pod_termination",
+    "pod": 1865,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 1865",
+    "explanation": "The predicted pod termination (`pod_termination`) suggests a problem with the pods in namespace 3.  Let's analyze the provided metrics to pinpoint the likely root cause:\n\n\n**Suspect Areas:**\n\n* **Low CPU and Memory Allocation Efficiency:**  CPU Allocation Efficiency (0.205) and Memory Allocation Eff..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.799608",
+    "issue": "pod_failure",
+    "pod": 4696,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 4696",
+    "explanation": "The predicted pod failure (pod_failure) is likely due to a combination of factors, rather than a single, obvious cause. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.00463192):** This is extremely low.  It means the pod is barely using any of its allocated CPU..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.843881",
+    "issue": "cpu_exhaustion",
+    "pod": 896,
+    "namespace": 0,
+    "remediation": "bash scripts/scale_cpu.sh 896",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is clearly indicated by the high Node CPU Usage (96.43%) and the relatively low CPU Allocation Efficiency (0.6987).  Let's break down the root cause and recommendations:\n\n**Root Cause Analysis:**\n\n* **High Node CPU Usage (96.43%):** This is the primary driver..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.936656",
+    "issue": "overheating",
+    "pod": 4522,
+    "namespace": 1,
+    "remediation": "bash scripts/evacuate_node.sh 4522",
+    "explanation": "The predicted failure (\"overheating\") is strongly indicated by the high `Node Temperature` (96.67\u00b0C) and the high `Node CPU Usage` (72.87%). While other metrics are relevant, they are less directly indicative of the overheating problem.  Let's break down the analysis and recommendations:\n\n**Root Cau..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:32.991353",
+    "issue": "memory_exhaustion",
+    "pod": 3212,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 3212",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 3212 in Namespace 3.  Let's analyze the contributing factors:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.2493):** This is extremely low. It means the pod is only using a small fraction (about 25%) of its allocated memory.  This stro..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.041875",
+    "issue": "cpu_exhaustion",
+    "pod": 451,
+    "namespace": 2,
+    "remediation": "bash scripts/scale_cpu.sh 451",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly indicated by the high Node CPU Usage (93.6%) and the relatively high CPU Allocation Efficiency (0.99).  Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\n* **High Node CPU Usage (93.6%):** This is the primary culprit.  ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.157566",
+    "issue": "disk_io_bottleneck",
+    "pod": 129,
+    "namespace": 0,
+    "remediation": "bash scripts/move_pod.sh 129",
+    "explanation": "The predicted failure is attributed to a `disk_io_bottleneck`.  Let's analyze the provided metrics to understand why:\n\n**Key Indicators:**\n\n* **Disk I/O: 989.9123217:** This value is significantly high and is the primary indicator of the predicted failure.  The units are unspecified, but the magnitu..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.277113",
+    "issue": "disk_io_bottleneck",
+    "pod": 1897,
+    "namespace": 1,
+    "remediation": "bash scripts/move_pod.sh 1897",
+    "explanation": "The predicted failure, \"disk_io_bottleneck,\" is directly indicated by the high Disk I/O metric (939.80).  While other metrics provide context, this is the primary culprit.  The high Disk I/O suggests the pods are struggling to read or write data to persistent storage fast enough to meet their perfor..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.327067",
+    "issue": "memory_exhaustion",
+    "pod": 2596,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 2596",
+    "explanation": "The prediction indicates a `memory_exhaustion` failure for Pod 2596 in Namespace 0.  While the other metrics provide context, the low Memory Allocation Efficiency is the key indicator.\n\n**Root Cause Analysis:**\n\nThe primary root cause is likely insufficient memory allocated to Pod 2596.  Let's break..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.373877",
+    "issue": "memory_exhaustion",
+    "pod": 4410,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 4410",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite relatively low Node Memory Usage (6.99%).  This suggests a problem with *memory allocation efficiency* within the pods themselves, not necessarily a lack of available memory on the node.  The low Memory Allocation Efficiency (0.48) strongly suppo..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.469717",
+    "issue": "pod_termination",
+    "pod": 3404,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 3404",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 3404 in Namespace 2 suggests resource starvation as the primary root cause. Let's break down the evidence:\n\n\n**Evidence of Resource Starvation:**\n\n* **Extremely Low Allocation Efficiency:** Both CPU (0.088) and Memory (0.186) allocation efficie..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.517485",
+    "issue": "pod_failure",
+    "pod": 4205,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 4205",
+    "explanation": "The prediction of pod failure (pod 4205 in namespace 2) is likely due to a combination of factors, rather than a single overwhelming cause. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **Low CPU Allocation Efficiency (0.59):** This indicates the pod is not utilizing its allocated CPU resou..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.625069",
+    "issue": "pod_termination",
+    "pod": 3006,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 3006",
+    "explanation": "The predicted pod termination (pod_3006 in namespace 0) suggests resource exhaustion or instability within the node, potentially affecting the pod's functionality. Let's analyze the metrics:\n\n**Key Indicators:**\n\n* **Low CPU Allocation Efficiency (0.41):** This is a strong indicator.  The pod is onl..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.716772",
+    "issue": "pod_termination",
+    "pod": 1195,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 1195",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely caused by a combination of factors, primarily stemming from resource constraints and potentially underlying issues:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage (98.44%):** This is the most critical factor.  The node is almost comp..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.760275",
+    "issue": "cpu_exhaustion",
+    "pod": 1765,
+    "namespace": 0,
+    "remediation": "bash scripts/scale_cpu.sh 1765",
+    "explanation": "The predicted failure is `cpu_exhaustion`, clearly indicated by the high Node CPU Usage (95.58%) and low CPU Allocation Efficiency (0.45).  Let's break down the root cause and recommendations:\n\n**Root Cause Analysis:**\n\nThe primary reason for the predicted CPU exhaustion is the extremely high Node C..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.802966",
+    "issue": "pod_failure",
+    "pod": 4003,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 4003",
+    "explanation": "The predicted failure for Pod 4003 in Namespace 3 points to several potential root causes, none of which are definitively identified by the provided metrics alone.  The low CPU and Memory Allocation Efficiency are strong indicators, however. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **C..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.849768",
+    "issue": "network_latency_issue",
+    "pod": 4980,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 4980",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 177.5208357 (units unspecified, but likely milliseconds or similar).  While other metrics provide context, the high network latency is the primary indicator.\n\n**Root Cause Analysis:**\n\nThe high network latency ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:33.929309",
+    "issue": "pod_termination",
+    "pod": 296,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 296",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, primarily resource exhaustion and potentially underlying issues indicated by high node temperature and event messages. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Extremely Low Memory Allocation..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.008793",
+    "issue": "pod_termination",
+    "pod": 1621,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 1621",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely not directly caused by a single overwhelmingly bad metric, but rather a combination of factors pointing towards resource exhaustion and potential instability. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficienc..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.047633",
+    "issue": "pod_failure",
+    "pod": 3956,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 3956",
+    "explanation": "The predicted pod failure is likely multifaceted, with several contributing factors highlighted in the metrics:\n\n**High Resource Consumption on the Node:**\n\n* **Node CPU Usage (56.43%):**  While not critically high, this, combined with high memory usage, indicates the node is under significant press..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.087475",
+    "issue": "pod_failure",
+    "pod": 2960,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 2960",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors, rather than a single root cause.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.74):** This is relatively low.  It means that only about 74% of allocated CPU resources are bei..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.126138",
+    "issue": "memory_exhaustion",
+    "pod": 1427,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 1427",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively low Node Memory Usage (39.37%).  This suggests a problem with memory allocation *within* the pods, rather than a cluster-wide memory shortage.  The high Memory Allocation Efficiency (0.93) further supports this.  Let's break down the..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.205893",
+    "issue": "pod_termination",
+    "pod": 620,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 620",
+    "explanation": "The prediction of `pod_termination` based on the provided Kubernetes metrics suggests a potential resource exhaustion issue, likely impacting the pods' ability to function correctly. Let's break down the contributing factors:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.347):** This is..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.330908",
+    "issue": "overheating",
+    "pod": 3520,
+    "namespace": 1,
+    "remediation": "bash scripts/evacuate_node.sh 3520",
+    "explanation": "The predicted failure, \"overheating,\" is strongly indicated by the high Node Temperature (99.355\u00b0C) and high Node CPU Usage (89.61%).  While other metrics contribute to the overall system stress, these two are the primary culprits. Let's break down the analysis and recommendations:\n\n**Root Cause Ana..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.376726",
+    "issue": "pod_failure",
+    "pod": 1378,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 1378",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to low memory allocation efficiency (0.118660917) in combination with high node CPU usage (83.9184529%). Let's break down the contributing factors and propose actionable recommendations:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Effi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.416460",
+    "issue": "memory_exhaustion",
+    "pod": 207,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 207",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this conclusion.  Let's analyze the key indicators:\n\n**Key Indicators Pointing to Memory Exhaustion:**\n\n* **Memory Allocation Efficiency (0.6396):** This is significantly low.  It means that only about 64% of allocated me..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.461184",
+    "issue": "memory_exhaustion",
+    "pod": 3240,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 3240",
+    "explanation": "The predicted failure, \"memory_exhaustion,\" is strongly supported by the metrics.  Let's break down the contributing factors and propose solutions:\n\n**Root Cause Analysis:**\n\n* **High Memory Usage (Node Memory Usage: 90.63765387):**  The node is extremely close to running out of memory (90.6%). This..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.504209",
+    "issue": "network_latency_issue",
+    "pod": 1422,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 1422",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, indicated by a high Network Latency value (169.9333683).  While other metrics show some resource pressure, the network latency is the primary driver of the prediction.\n\n**Root Cause Analysis:**\n\nThe high Network Latency (169.9333683) su..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.542533",
+    "issue": "network_latency_issue",
+    "pod": 3853,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 3853",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 170.51 seconds.  While other metrics are present, the prediction directly points to network latency as the primary culprit. Let's analyze further and provide recommendations:\n\n**Root Cause Analysis:**\n\nThe high..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.640306",
+    "issue": "overheating",
+    "pod": 2367,
+    "namespace": 0,
+    "remediation": "bash scripts/evacuate_node.sh 2367",
+    "explanation": "The predicted failure is \"overheating,\" strongly indicated by the high `Node Temperature` (95.72\u00b0C). While other metrics contribute to the overall system health, the high temperature is the primary driver of the predicted failure.  Let's break down the contributing factors and recommendations:\n\n**Ro..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.682872",
+    "issue": "pod_failure",
+    "pod": 2401,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 2401",
+    "explanation": "The provided metrics suggest a potential pod failure (pod_failure), but pinpointing the *exact* root cause requires further investigation.  The metrics point towards resource constraints and potential underlying issues, rather than a single definitive cause. Let's break down the clues:\n\n**Suspect Ar..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.761932",
+    "issue": "pod_termination",
+    "pod": 4509,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 4509",
+    "explanation": "The predicted pod termination (pod_4509 in namespace 2) suggests a resource exhaustion or performance bottleneck.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.77):**  While not critically low, this indicates that the pod isn't fully utilizing its allocated C..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.802086",
+    "issue": "network_latency_issue",
+    "pod": 884,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 884",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, and the supporting metrics strongly suggest this is the root cause.  Let's break down why:\n\n* **High Network Latency:** The most significant indicator is the `Network Latency` of 173.42 seconds. This is exceptionally high and almost cer..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.841375",
+    "issue": "memory_exhaustion",
+    "pod": 1205,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 1205",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this prediction.  Let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage (99.82690139%):** This is the most critical factor. The node is almost completely out of memory.  This direct..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.922366",
+    "issue": "pod_termination",
+    "pod": 2331,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 2331",
+    "explanation": "The predicted `pod_termination` for Pod 2331 in Namespace 3 suggests a resource exhaustion or instability issue. Let's analyze the metrics:\n\n**Critical Metrics:**\n\n* **Memory Allocation Efficiency (0.54):** This is significantly low.  It means the pod is only using about 54% of its allocated memory...."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:34.971314",
+    "issue": "memory_exhaustion",
+    "pod": 116,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 116",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite having relatively low Node Memory Usage (18.19%).  This suggests a problem with how memory is being allocated and utilized within the pods, rather than a cluster-wide memory shortage. The low Memory Allocation Efficiency (0.23) strongly supports ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.058997",
+    "issue": "pod_termination",
+    "pod": 1361,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 1361",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely caused by a combination of factors, primarily resource exhaustion and potential instability. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.28):** This is extremely low.  It means the pods are o..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.105894",
+    "issue": "memory_exhaustion",
+    "pod": 3907,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 3907",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this.  Let's break down why and what to do:\n\n**Root Cause Analysis:**\n\nThe key indicator is the extremely low **Memory Allocation Efficiency (0.038689653)**. This means the pod is only using a tiny fraction of the memory ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.153183",
+    "issue": "memory_exhaustion",
+    "pod": 490,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 490",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this.  Let's break down why and what to do:\n\n**Root Cause Analysis:**\n\nThe primary indicator is the extremely low **Memory Allocation Efficiency (0.1421)**.  This means that only about 14% of the allocated memory is actua..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.200549",
+    "issue": "pod_failure",
+    "pod": 3935,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 3935",
+    "explanation": "The provided metrics suggest a potential pod failure (`pod_failure`) in Kubernetes namespace 3, impacting pod 3935. While a single \"Predicted Failure\" label isn't sufficient for definitive diagnosis, the metrics give strong clues. Let's analyze the most likely culprits:\n\n**High Resource Consumption ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.246276",
+    "issue": "pod_failure",
+    "pod": 2436,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 2436",
+    "explanation": "The predicted pod failure (pod_failure) for pod 2436 in namespace 3 is likely due to a combination of factors, primarily resource constraints and potentially a latent issue indicated by the single event message. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficienc..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.348400",
+    "issue": "pod_termination",
+    "pod": 775,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 775",
+    "explanation": "The prediction of `pod_termination` based on the provided metrics points towards resource exhaustion and potentially network issues as primary suspects.  Let's break down the contributing factors:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.22):** This is extremely low.  It indica..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.451595",
+    "issue": "overheating",
+    "pod": 3581,
+    "namespace": 3,
+    "remediation": "bash scripts/evacuate_node.sh 3581",
+    "explanation": "The predicted failure (\"overheating\") is strongly indicated by the high `Node Temperature` (84.58860348) coupled with high `Node CPU Usage` (49.49922312).  While other metrics are elevated, they're less directly indicative of overheating. Let's break down the analysis and recommendations:\n\n**Root Ca..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.490862",
+    "issue": "network_latency_issue",
+    "pod": 3649,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 3649",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 176.1001164 (units unspecified, but likely milliseconds or similar).  While other metrics are high (Node CPU Usage, Node Memory Usage, Disk I/O), the prediction directly points to network latency as the root ca..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.528311",
+    "issue": "network_latency_issue",
+    "pod": 2818,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 2818",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 168.1016122 (units unspecified, likely milliseconds or seconds).  While other metrics show potential resource constraints, the prediction points directly to network latency as the primary culprit.\n\n**Root Cause..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.627766",
+    "issue": "disk_io_bottleneck",
+    "pod": 38,
+    "namespace": 3,
+    "remediation": "bash scripts/move_pod.sh 38",
+    "explanation": "The predicted failure is a `disk_io_bottleneck`, meaning the system is experiencing excessively high disk I/O, hindering performance and potentially leading to failure.  Let's analyze the contributing factors from the provided metrics:\n\n**Contributing Factors:**\n\n* **High Disk I/O:** The `Disk I/O` ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.729378",
+    "issue": "disk_io_bottleneck",
+    "pod": 1236,
+    "namespace": 2,
+    "remediation": "bash scripts/move_pod.sh 1236",
+    "explanation": "The predicted failure is a `disk_io_bottleneck`, indicated by the high Disk I/O value (998.4334833). While other metrics contribute to the overall system health, they are not the primary cause of the predicted failure.  Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\nTh..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.771466",
+    "issue": "cpu_exhaustion",
+    "pod": 2683,
+    "namespace": 0,
+    "remediation": "bash scripts/scale_cpu.sh 2683",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly indicated by the high Node CPU Usage (93.35%) and the low CPU Allocation Efficiency (0.21).  Let's break down the contributing factors and propose solutions:\n\n**Root Cause Analysis:**\n\n* **High Node CPU Usage (93.35%):** This is the primary driver..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.902314",
+    "issue": "disk_io_bottleneck",
+    "pod": 1280,
+    "namespace": 3,
+    "remediation": "bash scripts/move_pod.sh 1280",
+    "explanation": "The predicted failure is a `disk_io_bottleneck`, indicating that the system's disk I/O performance is insufficient to handle the current workload.  Let's analyze the contributing factors:\n\n**Analysis:**\n\n* **High Disk I/O:** The `Disk I/O` metric (959.9767501) is significantly high.  While the units..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:35.950500",
+    "issue": "network_latency_issue",
+    "pod": 2188,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 2188",
+    "explanation": "The predicted failure, \"network_latency_issue,\" is directly indicated by the high Network Latency metric (173.4485047). While other metrics provide context, they aren't the primary cause of the predicted failure.  Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\nThe high..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.050239",
+    "issue": "overheating",
+    "pod": 2092,
+    "namespace": 2,
+    "remediation": "bash scripts/evacuate_node.sh 2092",
+    "explanation": "The predicted failure is \"overheating,\" strongly indicated by the high `Node Temperature` (85.63\u00b0C) and high `Node CPU Usage` (86.72%).  While other metrics contribute to overall system stress, they are secondary to the thermal issue.\n\n**Root Cause Analysis:**\n\nThe primary root cause is likely **exc..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.094662",
+    "issue": "memory_exhaustion",
+    "pod": 3199,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 3199",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite relatively low Node Memory Usage (7.7%).  This discrepancy suggests a problem with how memory is being allocated and utilized within the pods, rather than a system-wide memory shortage.\n\n**Root Cause Analysis:**\n\nThe key indicators pointing towar..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.140467",
+    "issue": "cpu_exhaustion",
+    "pod": 4305,
+    "namespace": 0,
+    "remediation": "bash scripts/scale_cpu.sh 4305",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is strongly indicated by the high Node CPU Usage (92.6%) and the relatively low CPU Allocation Efficiency (0.88).  While the Memory Allocation Efficiency is low (0.44), it's not the primary driver of the predicted failure. Let's break down the root cause and ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.227118",
+    "issue": "pod_termination",
+    "pod": 2357,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 2357",
+    "explanation": "The prediction of `pod_termination` for Pod 2357 in Namespace 0 suggests resource exhaustion or instability within the node or the pod itself. Let's analyze the metrics:\n\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.52):** This is relatively low.  It means the pod isn't effectively uti..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.322352",
+    "issue": "pod_termination",
+    "pod": 1334,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 1334",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 1334 in Namespace 3 suggests a resource exhaustion issue, potentially exacerbated by high node temperature.  Let's break down the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.61):** While not critically low, this indicate..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.368600",
+    "issue": "cpu_exhaustion",
+    "pod": 1203,
+    "namespace": 2,
+    "remediation": "bash scripts/scale_cpu.sh 1203",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is directly indicated by the extremely high Node CPU Usage (95.29%).  While other metrics are present, they're largely secondary indicators or symptoms of this core problem. Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\nThe pri..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.413928",
+    "issue": "pod_failure",
+    "pod": 3706,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 3706",
+    "explanation": "The predicted pod failure (pod_failure) for pod 3706 in namespace 3 suggests a resource starvation issue combined with potential underlying infrastructure problems. Let's break down the metrics:\n\n**Problematic Metrics:**\n\n* **CPU Allocation Efficiency (0.7988):** While not critically low, this indic..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.456953",
+    "issue": "memory_exhaustion",
+    "pod": 4686,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 4686",
+    "explanation": "The prediction indicates a `memory_exhaustion` failure for Pod 4686 in Namespace 2.  While the CPU allocation efficiency is low (0.45), the primary culprit is the high memory allocation efficiency (0.97).  Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\n* **High Memory ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.553460",
+    "issue": "overheating",
+    "pod": 3215,
+    "namespace": 2,
+    "remediation": "bash scripts/evacuate_node.sh 3215",
+    "explanation": "The predicted failure (\"overheating\") is directly linked to the high `Node Temperature` (94.22751441) and indirectly related to high `Node CPU Usage` (43.55093853).  While other metrics are provided, they're less directly implicated in the overheating. Let's break down the analysis and recommendatio..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.600471",
+    "issue": "pod_failure",
+    "pod": 1965,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 1965",
+    "explanation": "The provided Kubernetes metrics suggest a potential pod failure (`pod_failure`), but the root cause isn't definitively clear from the data alone.  The metrics show signs of resource pressure and potential hardware issues, but further investigation is needed.\n\n**Analysis of Suspicious Metrics:**\n\n* *..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.649700",
+    "issue": "memory_exhaustion",
+    "pod": 4133,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 4133",
+    "explanation": "The prediction indicates a `memory_exhaustion` failure for Pod 4133 in Namespace 0.  While the predicted failure points to memory, the other metrics provide valuable context for a more complete diagnosis and remediation strategy.\n\n**Root Cause Analysis:**\n\nThe primary indicator is the `Predicted Fai..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.789003",
+    "issue": "pod_termination",
+    "pod": 4401,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 4401",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 4401 in Namespace 3 is likely not directly caused by any single high metric, but rather a combination of factors pointing towards resource exhaustion or instability within the pod's environment.  Let's break down the metrics:\n\n**Concerning Metr..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.833147",
+    "issue": "pod_failure",
+    "pod": 2498,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 2498",
+    "explanation": "The predicted pod failure is likely multi-faceted, stemming from a combination of resource constraints and potentially underlying infrastructure issues. Let's break down the metrics:\n\n**Critical Indicators:**\n\n* **High Node Memory Usage (91.8%):** This is the most pressing issue.  The node is almost..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.883486",
+    "issue": "network_latency_issue",
+    "pod": 4648,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 4648",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 162.3787355 (units unspecified, but likely milliseconds).  While other metrics are present, the prediction directly points to network latency as the primary concern.\n\n**Root Cause Analysis:**\n\nThe high network ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.923783",
+    "issue": "memory_exhaustion",
+    "pod": 4048,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4048",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4048 in Namespace 1.  While the prediction points to memory, let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.3188):** This is the strongest indicator.  The pod is only using 31.88% of its ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:36.962707",
+    "issue": "memory_exhaustion",
+    "pod": 2570,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 2570",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively low Node Memory Usage (32.14%).  The discrepancy lies in the extremely low Memory Allocation Efficiency (0.27). This means that while the node isn't generally overloaded, the pods within it, specifically the affected ones (2570 pods ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.002522",
+    "issue": "network_latency_issue",
+    "pod": 4298,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 4298",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 180.9043119 (units unspecified, but likely milliseconds or similar).  While other metrics are elevated (high Node CPU and Memory usage), the prediction directly points to network latency as the root cause.\n\n**R..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.090073",
+    "issue": "pod_termination",
+    "pod": 3164,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 3164",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 3164 in Namespace 3 suggests a resource exhaustion or performance bottleneck.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.1798):** This is extremely low. It means the pod is only using a tiny fraction ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.136271",
+    "issue": "network_latency_issue",
+    "pod": 257,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 257",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  While other metrics show some strain, the high network latency (191.6416486,  presumably in milliseconds or some other unit indicating significant delay) is the primary indicator flagged by the prediction system.\n\n**Root Cause Analysis..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.190254",
+    "issue": "memory_exhaustion",
+    "pod": 4409,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4409",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4409 in Namespace 1.  Let's analyze the metrics to pinpoint the root cause and suggest actions.\n\n**Analysis:**\n\n* **High Memory Allocation Efficiency (0.8566):** This indicates that the pod is using a significant portion of its allocated memory.  ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.237660",
+    "issue": "pod_failure",
+    "pod": 3886,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 3886",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors, none of which are individually catastrophic but together point to resource starvation and potential instability:\n\n**Critical Issues:**\n\n* **Extremely Low CPU Allocation Efficiency (0.00386149):** This is the most al..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.286888",
+    "issue": "network_latency_issue",
+    "pod": 4231,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 4231",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  While other metrics are high (Node CPU Usage, Node Memory Usage, Disk I/O), the prediction specifically points to network latency as the root cause.  A network latency of 188.0067392 (units unspecified, likely milliseconds) is signific..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.330045",
+    "issue": "memory_exhaustion",
+    "pod": 3608,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 3608",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 3608 in Namespace 1.  Let's analyze the metrics to pinpoint the root cause and suggest actionable recommendations.\n\n**Analysis:**\n\n* **High Node Memory Usage (91.55%):** This is the most significant indicator. The node is severely memory-constrain..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.370735",
+    "issue": "cpu_exhaustion",
+    "pod": 725,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 725",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is clearly indicated by the extremely high Node CPU Usage (99.32%).  While other metrics contribute to the overall system health, the near-100% CPU utilization is the dominant factor driving this prediction.\n\n**Root Cause Analysis:**\n\nThe primary root cause i..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.454279",
+    "issue": "pod_termination",
+    "pod": 741,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 741",
+    "explanation": "The prediction of `pod_termination` based on the provided Kubernetes metrics suggests a potential problem, but the metrics themselves don't definitively pinpoint the root cause.  The high CPU and memory usage on the node, combined with relatively high disk I/O and network latency, point towards reso..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.500437",
+    "issue": "memory_exhaustion",
+    "pod": 1509,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 1509",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this prediction.  While other metrics show some stress, the low Memory Allocation Efficiency is the primary culprit.\n\n**Root Cause Analysis:**\n\nThe key indicator is the **Memory Allocation Efficiency of 0.419**. This mean..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.617291",
+    "issue": "disk_io_bottleneck",
+    "pod": 359,
+    "namespace": 1,
+    "remediation": "bash scripts/move_pod.sh 359",
+    "explanation": "The predicted failure, \"disk_io_bottleneck,\" is directly indicated by the high Disk I/O metric (936.6463026).  While other metrics are elevated, they're not the primary driver of the predicted failure. Let's break down the analysis and recommendations:\n\n**Root Cause Analysis:**\n\nThe extremely high D..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.665645",
+    "issue": "memory_exhaustion",
+    "pod": 3841,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 3841",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 3841 in Namespace 3.  While the overall Node memory usage is only 21.75%, the critical factor is the **Memory Allocation Efficiency of 0.8228**. This indicates that the pod is using a significant portion of its allocated memory, leaving little roo..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.715470",
+    "issue": "memory_exhaustion",
+    "pod": 2129,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 2129",
+    "explanation": "The prediction indicates a `memory_exhaustion` failure for Pod 2129 in Namespace 1.  Let's analyze the provided metrics to pinpoint the root cause and suggest solutions:\n\n**Analysis:**\n\n* **Memory Allocation Efficiency (0.726):** This indicates that the pod is only using about 72.6% of its allocated..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.765303",
+    "issue": "memory_exhaustion",
+    "pod": 4622,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4622",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4622 in Namespace 1.  Let's analyze the provided metrics:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.923):** This is very high, indicating the pod is using almost all of its allocated memory.  This is the strongest indicator of the ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.811262",
+    "issue": "memory_exhaustion",
+    "pod": 3291,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 3291",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 3291 in Namespace 3.  The metrics strongly support this prediction:\n\n* **Memory Allocation Efficiency (0.21):** This is extremely low.  It means the pod is only using 21% of the memory allocated to it.  This suggests significant over-provisioning ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.852241",
+    "issue": "memory_exhaustion",
+    "pod": 427,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 427",
+    "explanation": "The predicted failure, `memory_exhaustion`, is strongly indicated by the low **Memory Allocation Efficiency (0.1817)**.  While other metrics contribute to the overall system health and could indirectly influence memory usage, this low efficiency is the primary culprit.  This means that only about 18..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.902872",
+    "issue": "pod_failure",
+    "pod": 921,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 921",
+    "explanation": "The provided metrics suggest a potential pod failure (predicted as `pod_failure`), likely stemming from a combination of resource constraints and possibly a underlying issue indicated by the single event message. Let's break down the contributing factors:\n\n**Critical Issues:**\n\n* **Low Resource Allo..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:37.948913",
+    "issue": "memory_exhaustion",
+    "pod": 849,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 849",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this prediction. Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Extremely High Node Memory Usage (98.05%):** This is the most critical factor.  The node is almost completely out of memory, leavi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.043906",
+    "issue": "pod_termination",
+    "pod": 2562,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 2562",
+    "explanation": "The prediction of `pod_termination` for Pod 2562 in Namespace 1 suggests a resource exhaustion or instability issue. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.458):** This is significantly low.  It means the pod is only utilizing 45.8% of its allocated CPU..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.089178",
+    "issue": "memory_exhaustion",
+    "pod": 2059,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 2059",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics support this.  Let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.32):** This is the most significant indicator.  Only 32% of allocated memory is being used effectively. This suggest..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.138583",
+    "issue": "memory_exhaustion",
+    "pod": 3081,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 3081",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 3081 in Namespace 2.  The key metric supporting this prediction is the extremely low **Memory Allocation Efficiency (0.0396)**. This indicates that the pod is only using a tiny fraction (around 4%) of the memory it's allocated.  While high Disk I/..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.187168",
+    "issue": "memory_exhaustion",
+    "pod": 4972,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 4972",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite relatively low Node Memory Usage (14.2%). This suggests a problem with memory allocation *within* the pods, not a cluster-wide memory shortage.  The low Memory Allocation Efficiency (0.23) strongly supports this.  Let's break down the contributin..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.236400",
+    "issue": "pod_failure",
+    "pod": 2450,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 2450",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors, indicated by the provided Kubernetes metrics. Let's break down the contributing elements:\n\n**High Resource Consumption & Inefficient Allocation:**\n\n* **Low CPU Allocation Efficiency (0.57):** This suggests that the ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.287564",
+    "issue": "memory_exhaustion",
+    "pod": 3356,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 3356",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite relatively low Node Memory Usage (62.78%).  This suggests a problem with *container memory allocation* rather than overall node memory capacity.  The high Memory Allocation Efficiency (0.76) supports this; the pods are using a significant portion..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.338013",
+    "issue": "network_latency_issue",
+    "pod": 4306,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 4306",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  While other metrics show resource utilization (CPU, memory, disk I/O), the high Network Latency (173.71 seconds) is the key indicator driving the prediction.  Let's analyze this further and provide actionable recommendations:\n\n**Root C..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.380406",
+    "issue": "memory_exhaustion",
+    "pod": 1475,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1475",
+    "explanation": "The prediction indicates a `memory_exhaustion` failure despite high CPU allocation efficiency (0.83) and relatively low Node Memory Usage (12%).  This apparent contradiction requires careful examination.\n\n**Root Cause Analysis:**\n\nThe key discrepancy is between the high Memory Allocation Efficiency ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.418538",
+    "issue": "network_latency_issue",
+    "pod": 3864,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 3864",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 154.2123171 (units unspecified, but likely milliseconds).  While other metrics show some resource constraint (CPU and Memory Allocation Efficiency are below 1, indicating underutilization, and Node CPU/Memory u..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.458078",
+    "issue": "memory_exhaustion",
+    "pod": 3132,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 3132",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 3132 in Namespace 1.  Let's analyze the metrics to understand the root cause and propose actionable recommendations.\n\n**Analysis:**\n\n* **Low Memory Allocation Efficiency (0.3987):** This is the most significant indicator.  It means the pod is only..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.497376",
+    "issue": "memory_exhaustion",
+    "pod": 4539,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 4539",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics support this conclusion.  Let's break down the contributing factors and suggest actions:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.766):** This is the most significant indicator.  It means that only about 76.6% of..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.535358",
+    "issue": "network_latency_issue",
+    "pod": 3880,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 3880",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 196.1711085 (units unspecified, but likely milliseconds or similar).  While other metrics are present, the prediction directly points to network latency as the primary culprit.  Let's analyze the contributing f..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.591046",
+    "issue": "cpu_exhaustion",
+    "pod": 3546,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 3546",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is directly indicated by the high Node CPU Usage (92.9%) and the low CPU Allocation Efficiency (0.41).  This means the node is extremely close to its CPU capacity limit, and the pods on that node aren't efficiently utilizing the allocated CPU resources.\n\n**Ro..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.681677",
+    "issue": "pod_termination",
+    "pod": 37,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 37",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, primarily resource constraints and potentially underlying issues indicated by high network latency and events.  Let's break down the metrics:\n\n**Concerning Metrics:**\n\n* **Low CPU Allocation Efficiency (0.65..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.778728",
+    "issue": "overheating",
+    "pod": 50,
+    "namespace": 0,
+    "remediation": "bash scripts/evacuate_node.sh 50",
+    "explanation": "The predicted failure is \"overheating,\" and the most likely root cause is indicated by the high `Node Temperature` (93.7\u00b0C) coupled with high `Node CPU Usage` (46.12%).  While other metrics are elevated (Disk I/O, Network Latency), they are less likely to be the *direct* cause of overheating.\n\n**Roo..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.828807",
+    "issue": "memory_exhaustion",
+    "pod": 4540,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 4540",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively low Node Memory Usage (4.13%).  This discrepancy suggests the issue lies not in overall node memory, but rather in how memory is allocated and used *within* the pods.\n\n**Root Cause Analysis:**\n\nThe key indicator is the high Memory Al..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:38.914807",
+    "issue": "pod_termination",
+    "pod": 2108,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 2108",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, primarily focusing on the extremely low Memory Allocation Efficiency (0.0856) and high Network Latency (186.82 seconds). Let's break down the contributing factors and propose actionable recommendations:\n\n\n**..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.014516",
+    "issue": "pod_termination",
+    "pod": 4154,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 4154",
+    "explanation": "The prediction of `pod_termination` for Pod 4154 in Namespace 3 suggests resource exhaustion or instability within the node, potentially leading to pod eviction.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.626):** This is relatively low.  It means that the ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.108024",
+    "issue": "pod_termination",
+    "pod": 2957,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 2957",
+    "explanation": "The prediction of `pod_termination` for Pod 2957 in Namespace 3 suggests a potential resource exhaustion or instability issue. While no single metric screams \"failure,\" the combination paints a concerning picture. Let's analyze:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.817):** This..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.256638",
+    "issue": "disk_io_bottleneck",
+    "pod": 515,
+    "namespace": 2,
+    "remediation": "bash scripts/move_pod.sh 515",
+    "explanation": "The predicted failure is a `disk_io_bottleneck`, indicating that the system's performance is being severely hampered by insufficient disk I/O capacity.  Let's analyze the provided metrics to understand why:\n\n**Key Indicators:**\n\n* **Disk I/O: 931.7145522:** This extremely high value is the primary c..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.307217",
+    "issue": "pod_failure",
+    "pod": 1364,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 1364",
+    "explanation": "The provided metrics suggest a potential pod failure (predicted as `pod_failure`), but the root cause isn't definitively clear from this data alone.  The low CPU and memory allocation efficiencies are strong indicators, suggesting resource starvation is a likely culprit. Let's break down the metrics..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.356712",
+    "issue": "pod_failure",
+    "pod": 188,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 188",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors revealed in the provided Kubernetes metrics.  Let's break down the key indicators:\n\n**Critical Issues:**\n\n* **Low Memory Allocation Efficiency (0.35):** This is the most serious concern.  It indicates that only 35% o..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.458872",
+    "issue": "pod_termination",
+    "pod": 1922,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 1922",
+    "explanation": "The predicted pod termination (`pod_termination`) for Pod 1922 in Namespace 1 suggests a resource exhaustion or instability issue. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.21):** This is extremely low.  It means the pod is only using 21% of its allocated ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.503088",
+    "issue": "network_latency_issue",
+    "pod": 964,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 964",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  Let's analyze the provided metrics to understand why this is likely the case and what actions can be taken.\n\n**Analysis:**\n\nThe key metric pointing towards network latency issues is the high `Network Latency` of 158.5651201 (units unsp..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.621906",
+    "issue": "disk_io_bottleneck",
+    "pod": 1935,
+    "namespace": 3,
+    "remediation": "bash scripts/move_pod.sh 1935",
+    "explanation": "The predicted failure is a `disk_io_bottleneck`, meaning the pod is experiencing excessively high disk I/O, hindering its performance and potentially leading to failure.  Let's analyze the contributing factors and propose solutions:\n\n**Root Cause Analysis:**\n\nThe primary indicator is the extremely h..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.683130",
+    "issue": "memory_exhaustion",
+    "pod": 1276,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 1276",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 1276 in Namespace 2.  While other metrics contribute to the overall system health, the low Memory Allocation Efficiency (0.15) is the primary indicator pointing to this failure.  Let's break down the contributing factors and suggest actions:\n\n**Ro..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.732545",
+    "issue": "pod_failure",
+    "pod": 2806,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 2806",
+    "explanation": "The predicted pod failure (pod_failure) is likely due to a combination of factors, not a single cause. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.86):** While not critically low, this suggests the CPU resources allocated to the pod aren't being fully utiliz..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.779086",
+    "issue": "pod_failure",
+    "pod": 3190,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 3190",
+    "explanation": "The provided metrics suggest a potential pod failure, likely due to resource contention and possibly heat-related issues. Let's break down each metric and identify the likely culprits:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.7065):** This is relatively low.  It means that the pods..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.827315",
+    "issue": "memory_exhaustion",
+    "pod": 4387,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 4387",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite relatively low CPU allocation efficiency.  Let's analyze the metrics to understand why:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.896):** While seemingly high, this means that 10.4% of allocated memory is unused.  This isn't inher..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.877384",
+    "issue": "memory_exhaustion",
+    "pod": 356,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 356",
+    "explanation": "The prediction indicates a `memory_exhaustion` failure.  Let's analyze the provided metrics to pinpoint the root cause and suggest actionable steps.\n\n**Analysis:**\n\n* **Memory Allocation Efficiency (0.728):** This is relatively low.  It means that only about 73% of allocated memory is actually being..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.926056",
+    "issue": "memory_exhaustion",
+    "pod": 3188,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 3188",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 3188 in Namespace 1.  Let's analyze the contributing factors:\n\n**Key Indicators:**\n\n* **Memory Allocation Efficiency (0.35):** This is significantly low.  It means the pod is only using 35% of its allocated memory.  This suggests either the pod's ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:39.973647",
+    "issue": "pod_failure",
+    "pod": 2241,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 2241",
+    "explanation": "The predicted pod failure (pod_failure) for Pod 2241 in Namespace 3 is likely multi-faceted, stemming from a combination of resource constraints and potential hardware issues. Let's break down the metrics:\n\n\n**Critical Indicators:**\n\n* **CPU Allocation Efficiency (0.085986505):** This is extremely l..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.031265",
+    "issue": "network_latency_issue",
+    "pod": 1502,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 1502",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, and the supporting metrics strongly suggest this is the correct diagnosis.  While other metrics show some resource pressure (low CPU and especially memory allocation efficiency), the high network latency (179.1868423) is the most likely..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.126261",
+    "issue": "pod_termination",
+    "pod": 3354,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 3354",
+    "explanation": "The prediction of `pod_termination` for Pod 3354 in Namespace 3 suggests a resource exhaustion issue, primarily due to **extremely low memory allocation efficiency (0.098498371)**.  While other metrics offer clues, the low memory efficiency is the most significant indicator.\n\n**Root Cause Analysis:*..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.217863",
+    "issue": "pod_termination",
+    "pod": 1255,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 1255",
+    "explanation": "The predicted pod termination (`pod_termination`) for Pod 1255 in Namespace 0 suggests resource starvation and potential instability.  Let's analyze the metrics:\n\n**Critical Indicators:**\n\n* **Low CPU Allocation Efficiency (0.126):** This indicates the pod is significantly underutilizing its allocat..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.264462",
+    "issue": "cpu_exhaustion",
+    "pod": 3223,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 3223",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly indicated by the following metrics:\n\n* **Node CPU Usage: 99.10949374:** This is extremely high, nearing 100%, indicating the node is severely overloaded on CPU resources.  This is the primary driver of the predicted failure.\n* **CPU Allocation Eff..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.369153",
+    "issue": "pod_termination",
+    "pod": 3241,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 3241",
+    "explanation": "The prediction of `pod_termination` for Pod 3241 in Namespace 0 suggests resource exhaustion or a systemic issue is impacting its stability. Let's analyze the metrics:\n\n**Critical Issues:**\n\n* **Low CPU Allocation Efficiency (0.31):** This indicates the pod is only using 31% of its allocated CPU res..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.461273",
+    "issue": "pod_termination",
+    "pod": 520,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 520",
+    "explanation": "The prediction of `pod_termination` based on the provided Kubernetes metrics points towards resource exhaustion as a likely root cause, potentially exacerbated by scaling issues. Let's break down the metrics:\n\n**Problematic Metrics:**\n\n* **CPU Allocation Efficiency (0.2858):** This is extremely low...."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.510913",
+    "issue": "network_latency_issue",
+    "pod": 4416,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 4416",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`.  Let's analyze the provided metrics to understand why this is likely the root cause and what actions can be taken.\n\n**Analysis:**\n\n* **High Network Latency:** The most significant indicator is the `Network Latency` of 188.4175075 (units..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.557954",
+    "issue": "memory_exhaustion",
+    "pod": 153,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 153",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the Kubernetes metrics strongly support this.  Let's analyze:\n\n**Root Cause Analysis:**\n\n* **Critically Low Memory Allocation Efficiency (0.0613):** This is the most significant indicator.  It means that only 6.13% of allocated memory is actually bei..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.605412",
+    "issue": "network_latency_issue",
+    "pod": 2845,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 2845",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, and the supporting metrics strongly suggest this is the correct diagnosis.  Let's break down why:\n\n**Evidence Supporting Network Latency Issue:**\n\n* **High Network Latency:** The most significant indicator is the extremely high `Network..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.654710",
+    "issue": "network_latency_issue",
+    "pod": 210,
+    "namespace": 1,
+    "remediation": "bash scripts/check_network.sh 210",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, and the supporting metrics strongly suggest this is the primary concern.  While other metrics are elevated, they don't directly point to a failure mode in the same way the high network latency does.\n\n**Root Cause Analysis:**\n\nThe high `..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.751155",
+    "issue": "pod_termination",
+    "pod": 4502,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 4502",
+    "explanation": "The predicted failure of Pod 4502 in Namespace 2 is likely due to resource starvation, specifically CPU, and potentially exacerbated by high network latency.  Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Extremely Low CPU Allocation Efficiency (0.03):** This indicates the pod is only usi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.799304",
+    "issue": "cpu_exhaustion",
+    "pod": 4328,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 4328",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is directly indicated by the high Node CPU Usage (90.53%) and low CPU Allocation Efficiency (0.54).  This means the node is extremely close to its CPU capacity, and the pods running on it aren't efficiently utilizing the allocated resources.  While other metr..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.914227",
+    "issue": "disk_io_bottleneck",
+    "pod": 1519,
+    "namespace": 0,
+    "remediation": "bash scripts/move_pod.sh 1519",
+    "explanation": "The predicted failure is attributed to a `disk_io_bottleneck`.  Let's analyze the provided metrics to understand why:\n\n**Key Indicators:**\n\n* **Disk I/O: 966.4678785:** This is significantly high and the primary indicator of the problem.  The units aren't specified, but the sheer magnitude suggests ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:40.961723",
+    "issue": "memory_exhaustion",
+    "pod": 627,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 627",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the Kubernetes metrics strongly support this prediction.  Let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage:** The most significant indicator is the `Node Memory Usage` of 92.88%. This is extremely high, le..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.007491",
+    "issue": "network_latency_issue",
+    "pod": 1088,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 1088",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 175.1160246 (units unspecified, but likely milliseconds).  While other metrics show some resource pressure (high Node CPU and Memory usage), the prediction directly points to network latency as the root cause.\n..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.052487",
+    "issue": "memory_exhaustion",
+    "pod": 1040,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1040",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively low Node Memory Usage (61.09%).  This suggests a mismatch between resource requests/limits and actual pod consumption, or a memory leak within the application running in the pods. Let's analyze the metrics:\n\n**Key Indicators:**\n\n* **..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.097438",
+    "issue": "network_latency_issue",
+    "pod": 1376,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 1376",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 193.7809304 (units unspecified, but likely milliseconds or similar).  Let's analyze the contributing factors and propose solutions:\n\n**Root Cause Analysis:**\n\nThe high network latency (193.78 units) is the prim..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.190014",
+    "issue": "pod_termination",
+    "pod": 1829,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 1829",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely caused by a combination of factors, primarily resource exhaustion on the node and potential application issues. Let's break down the contributing metrics:\n\n**Critical Issues:**\n\n* **Node CPU Usage (99.82%):** This is extremely high and indi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.264863",
+    "issue": "network_latency_issue",
+    "pod": 2021,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 2021",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 172.937802 (units unspecified, but likely milliseconds).  While other metrics are present, the prediction clearly points to network latency as the primary culprit.\n\n**Root Cause Analysis:**\n\nThe high network la..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.311682",
+    "issue": "memory_exhaustion",
+    "pod": 2159,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 2159",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this conclusion.  Let's break down the contributing factors and actionable recommendations:\n\n**Root Cause Analysis:**\n\n* **Critically Low Memory Allocation Efficiency (0.097):** This is the most significant indicator.  Th..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.408712",
+    "issue": "overheating",
+    "pod": 2036,
+    "namespace": 3,
+    "remediation": "bash scripts/evacuate_node.sh 2036",
+    "explanation": "The predicted failure (\"overheating\") is strongly indicated by the high `Node Temperature` (96.969\u00b0C) and high `Node CPU Usage` (88.52%).  While other metrics contribute to the overall system stress, these two are the most critical indicators pointing to imminent hardware failure.\n\n**Root Cause Anal..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.500089",
+    "issue": "overheating",
+    "pod": 2718,
+    "namespace": 0,
+    "remediation": "bash scripts/evacuate_node.sh 2718",
+    "explanation": "The predicted failure is \"overheating,\" directly indicated by the high `Node Temperature` (94.04\u00b0C). While other metrics are relevant, they're secondary factors contributing to or resulting from the overheating.\n\n**Root Cause Analysis:**\n\nThe primary root cause is the high node temperature of 94.04\u00b0..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.555125",
+    "issue": "memory_exhaustion",
+    "pod": 3150,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 3150",
+    "explanation": "The predicted failure, `memory_exhaustion`, is strongly supported by the metrics.  Let's break down the contributing factors and propose actionable recommendations:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.178):** This is the most significant indicator.  It means that only ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.805112",
+    "issue": "disk_io_bottleneck",
+    "pod": 3282,
+    "namespace": 0,
+    "remediation": "bash scripts/move_pod.sh 3282",
+    "explanation": "The predicted failure is a `disk_io_bottleneck`, indicated by the high Disk I/O value (926.91).  While other metrics are elevated (Node CPU Usage, Node Memory Usage, Network Latency), they aren't the primary driver of the predicted failure.\n\n**Root Cause Analysis:**\n\nThe high Disk I/O value (926.91)..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.901414",
+    "issue": "pod_termination",
+    "pod": 4425,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 4425",
+    "explanation": "The predicted pod termination (`pod_termination`) is likely due to a combination of factors, rather than a single, obvious cause.  Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.25):** This is extremely low.  It means the pod is only using 25% of its allocated ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:41.941498",
+    "issue": "cpu_exhaustion",
+    "pod": 824,
+    "namespace": 3,
+    "remediation": "bash scripts/scale_cpu.sh 824",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly supported by the metrics.  Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **Extremely High Node CPU Usage (96.27%):** This is the primary driver of the predicted CPU exhaustion.  The system is almost completely saturated, ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.033646",
+    "issue": "pod_termination",
+    "pod": 2154,
+    "namespace": 3,
+    "remediation": "bash scripts/log_and_restart.sh 2154",
+    "explanation": "The predicted pod termination (pod_termination) for Pod 2154 in Namespace 3 suggests a problem, but the provided metrics don't pinpoint a single, definitive cause.  Instead, several factors warrant investigation:\n\n**Suspect Areas & Analysis:**\n\n* **Low CPU Allocation Efficiency (0.4173):** This is a..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.117068",
+    "issue": "pod_termination",
+    "pod": 4227,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 4227",
+    "explanation": "The predicted pod termination (pod_4227) in namespace 0 suggests a resource exhaustion issue, possibly compounded by other factors. Let's analyze the metrics:\n\n**Key Indicators:**\n\n* **Low CPU Allocation Efficiency (0.54):**  The pod isn't effectively utilizing its allocated CPU resources.  This sug..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.206985",
+    "issue": "overheating",
+    "pod": 2077,
+    "namespace": 0,
+    "remediation": "bash scripts/evacuate_node.sh 2077",
+    "explanation": "The predicted failure (\"overheating\") is directly indicated by the high `Node Temperature` (93.69\u00b0C). While other metrics contribute to the overall system health, they are secondary to this primary indicator.\n\n**Root Cause Analysis:**\n\nThe high node temperature (93.69\u00b0C) suggests a critical issue wi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.305064",
+    "issue": "overheating",
+    "pod": 4365,
+    "namespace": 0,
+    "remediation": "bash scripts/evacuate_node.sh 4365",
+    "explanation": "The predicted failure is \"overheating,\" and the metrics strongly suggest this is due to high node temperature (84.9\u00b0C) combined with high node resource utilization. Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **High Node Temperature (84.9\u00b0C):** This is the primary indicat..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.419219",
+    "issue": "pod_termination",
+    "pod": 4049,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 4049",
+    "explanation": "The predicted pod termination (pod_4049) in namespace 0 suggests resource constraints and potential instability within the node, though the information provided is somewhat ambiguous about the precise cause. Let's break down the metrics and identify potential root causes:\n\n**Concerning Metrics:**\n\n*..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.502902",
+    "issue": "pod_termination",
+    "pod": 4348,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 4348",
+    "explanation": "The prediction of `pod_termination` for Pod 4348 in Namespace 0 suggests a resource constraint problem, possibly compounded by other factors. Let's analyze the metrics:\n\n**Key Indicators:**\n\n* **Low CPU Allocation Efficiency (0.526):** The pod is only using about half of its allocated CPU resources...."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.598925",
+    "issue": "pod_termination",
+    "pod": 636,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 636",
+    "explanation": "The prediction of `pod_termination` suggests a problem with the pods, likely stemming from resource constraints and potentially exacerbated by scaling events. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.3397):** This is very low.  It means that only about 34..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.645436",
+    "issue": "memory_exhaustion",
+    "pod": 2964,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 2964",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this. Let's analyze:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage:** The most significant indicator is the `Node Memory Usage` at 98.99%. This means the node is almost completely out of memory.  This is the direc..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.698057",
+    "issue": "memory_exhaustion",
+    "pod": 4459,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 4459",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively low Node Memory Usage (14.87%).  This suggests a problem with memory allocation within the specific pod (4459 in Namespace 2), not a cluster-wide memory shortage. The low CPU Allocation Efficiency further supports this.\n\n**Root Cause..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.747820",
+    "issue": "cpu_exhaustion",
+    "pod": 3583,
+    "namespace": 0,
+    "remediation": "bash scripts/scale_cpu.sh 3583",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is clearly indicated by the high Node CPU Usage (91.73%) and the relatively low CPU Allocation Efficiency (0.74).  Let's break down the root cause and propose solutions:\n\n**Root Cause Analysis:**\n\nThe primary culprit is the high Node CPU Usage (91.73%).  This..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.795615",
+    "issue": "memory_exhaustion",
+    "pod": 2872,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 2872",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively low Node Memory Usage (2.15%).  This discrepancy points to a problem with the application's memory management within the pod, rather than a system-wide memory shortage.  The low Memory Allocation Efficiency (0.12) strongly supports t..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.899215",
+    "issue": "pod_termination",
+    "pod": 750,
+    "namespace": 1,
+    "remediation": "bash scripts/log_and_restart.sh 750",
+    "explanation": "The predicted `pod_termination` suggests a problem within the pods themselves, potentially exacerbated by resource constraints and potentially high node utilization. Let's break down the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.816):** This is relatively high, meaning the ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.938448",
+    "issue": "memory_exhaustion",
+    "pod": 1256,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 1256",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this. Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage (95.75%):** This is the most critical factor.  The node is extremely close to running out of memory.  This leaves litt..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:42.978422",
+    "issue": "memory_exhaustion",
+    "pod": 2033,
+    "namespace": 3,
+    "remediation": "bash scripts/restart_pod.sh 2033",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this. Let's break down the contributing factors:\n\n**Root Cause Analysis:**\n\n* **High Memory Allocation Efficiency (MAE): 0.2609**  This is alarmingly low.  An ideal MAE is close to 1, indicating efficient memory usage.  A..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.021424",
+    "issue": "network_latency_issue",
+    "pod": 1036,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 1036",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, and the supporting metrics strongly suggest this is the root cause.  Let's break down why:\n\n**Key Indicators:**\n\n* **High Network Latency:** The most significant metric is `Network Latency` at 153.46 seconds. This is exceptionally high ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.031554",
+    "issue": "network_latency_issue",
+    "pod": 2475,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 2475",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency metric of 163.442 seconds.  While other metrics are elevated (Node CPU Usage, Node Memory Usage), the prediction directly points to network latency as the primary culprit.\n\n**Root Cause Analysis:**\n\nHigh network l..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.076023",
+    "issue": "network_latency_issue",
+    "pod": 550,
+    "namespace": 2,
+    "remediation": "bash scripts/check_network.sh 550",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 160.415531 (units unspecified, but likely milliseconds or similar).  This is significantly high and is the primary concern.  While other metrics show some resource constraints, the network latency is flagged as..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.126178",
+    "issue": "memory_exhaustion",
+    "pod": 3696,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 3696",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this conclusion.  Let's analyze the key indicators:\n\n**Key Indicators Pointing to Memory Exhaustion:**\n\n* **Memory Allocation Efficiency (0.1543):** This is extremely low.  It means that only about 15% of the allocated me..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.226154",
+    "issue": "pod_termination",
+    "pod": 637,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 637",
+    "explanation": "The predicted pod termination (`pod_termination`) suggests a resource exhaustion or instability issue. Let's analyze the provided metrics to pinpoint the root cause:\n\n**Problematic Metrics:**\n\n* **CPU Allocation Efficiency (0.766):** While not critically low, this indicates that the CPU resources al..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.273517",
+    "issue": "memory_exhaustion",
+    "pod": 2347,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 2347",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 2347 in Namespace 0.  Let's analyze the provided metrics to pinpoint the root cause and suggest solutions:\n\n**Analysis:**\n\n* **Low Memory Allocation Efficiency (0.1357):** This is the most significant indicator.  The pod is only using a small frac..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.321880",
+    "issue": "cpu_exhaustion",
+    "pod": 4746,
+    "namespace": 3,
+    "remediation": "bash scripts/scale_cpu.sh 4746",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is directly indicated by the extremely high Node CPU Usage (92.01%) and the low CPU Allocation Efficiency (0.35).  This means the node is heavily overloaded, and the pods on it aren't efficiently using the allocated CPU resources.  While other metrics are ele..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.367381",
+    "issue": "cpu_exhaustion",
+    "pod": 407,
+    "namespace": 1,
+    "remediation": "bash scripts/scale_cpu.sh 407",
+    "explanation": "The predicted failure, `cpu_exhaustion`, is strongly indicated by the high Node CPU Usage (92.93%) and the relatively high CPU Allocation Efficiency (0.95). Let's break down the contributing factors and actionable recommendations:\n\n**Root Cause Analysis:**\n\n* **High Node CPU Usage (92.93%):** This i..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.417554",
+    "issue": "pod_failure",
+    "pod": 346,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 346",
+    "explanation": "The predicted pod failure (`pod_failure`) is likely due to a combination of factors, primarily stemming from extremely low memory allocation efficiency and potentially high disk I/O. Let's break down each metric and its contribution:\n\n**Critical Issues:**\n\n* **Memory Allocation Efficiency (0.065):**..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.515046",
+    "issue": "pod_termination",
+    "pod": 983,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 983",
+    "explanation": "The predicted pod termination (`pod_termination`) with the given metrics points towards resource exhaustion, likely a combination of factors rather than a single root cause. Let's break down the suspicious metrics:\n\n**Critical Indicators:**\n\n* **CPU Allocation Efficiency (0.2369):**  This is extreme..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.562743",
+    "issue": "memory_exhaustion",
+    "pod": 2898,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 2898",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this conclusion.  Let's break down why and what to do:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage (99.19%):** This is the most critical indicator.  The node is almost completely out of memory, leaving little to..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.712386",
+    "issue": "pod_termination",
+    "pod": 973,
+    "namespace": 0,
+    "remediation": "bash scripts/log_and_restart.sh 973",
+    "explanation": "The prediction of `pod_termination` with the given metrics points towards resource exhaustion or a cascading failure triggered by resource issues, rather than a single, obvious culprit. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.4008):** This is extremely l..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.760822",
+    "issue": "network_latency_issue",
+    "pod": 2789,
+    "namespace": 3,
+    "remediation": "bash scripts/check_network.sh 2789",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 176.8736559 (units unspecified, but likely milliseconds or similar).  While other metrics are elevated, the prediction specifically points to network latency as the root cause.\n\n**Root Cause Analysis:**\n\nThe hi..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.871113",
+    "issue": "overheating",
+    "pod": 1831,
+    "namespace": 2,
+    "remediation": "bash scripts/evacuate_node.sh 1831",
+    "explanation": "The predicted failure (\"overheating\") is strongly indicated by the high `Node Temperature` (90.95\u00b0C) and, to a lesser extent, the high `Node CPU Usage` (45.82%). While other metrics provide context, they're not the primary drivers of the predicted failure.  Let's break down the analysis and recommen..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.927653",
+    "issue": "memory_exhaustion",
+    "pod": 987,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 987",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 987 in Namespace 1.  Let's analyze the metrics to pinpoint the root cause and suggest actionable steps:\n\n**Analysis:**\n\n* **Memory Allocation Efficiency (0.508):** This is the most crucial metric.  A value of 0.508 indicates that only about 51% of..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:43.969271",
+    "issue": "memory_exhaustion",
+    "pod": 1678,
+    "namespace": 1,
+    "remediation": "bash scripts/restart_pod.sh 1678",
+    "explanation": "The predicted failure is `memory_exhaustion`, despite a relatively low CPU allocation efficiency (0.216) suggesting underutilized CPU resources.  The key indicator is the high `Memory Allocation Efficiency` (0.89) coupled with the high `Node Memory Usage` (93.03%). This means that while the pods are..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.082799",
+    "issue": "overheating",
+    "pod": 2663,
+    "namespace": 2,
+    "remediation": "bash scripts/evacuate_node.sh 2663",
+    "explanation": "The predicted failure (\"overheating\") is strongly indicated by the high Node Temperature (83.21\u00b0C) and, to a lesser extent, the high Node CPU Usage (21.05%). While other metrics show some resource constraints (low Memory Allocation Efficiency), the temperature is the primary driver of the predicted ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.179348",
+    "issue": "pod_termination",
+    "pod": 2192,
+    "namespace": 2,
+    "remediation": "bash scripts/log_and_restart.sh 2192",
+    "explanation": "The predicted pod termination (`pod_termination`) suggests a resource exhaustion or instability issue.  Let's analyze the provided metrics to pinpoint the likely root cause:\n\n**Key Indicators:**\n\n* **Low Memory Allocation Efficiency (0.1239):** This is the most alarming metric.  It indicates that th..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.290937",
+    "issue": "disk_io_bottleneck",
+    "pod": 3595,
+    "namespace": 3,
+    "remediation": "bash scripts/move_pod.sh 3595",
+    "explanation": "The predicted failure is attributed to a `disk_io_bottleneck`.  Let's analyze the provided metrics to understand why this is happening and formulate recommendations.\n\n**Analysis:**\n\n* **High Disk I/O:** The `Disk I/O` value of 917.25 is significantly high, indicating excessive read/write operations ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.331748",
+    "issue": "memory_exhaustion",
+    "pod": 1916,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 1916",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this.  Let's break down why:\n\n**Root Cause Analysis:**\n\n* **Low Memory Allocation Efficiency (0.029):** This is the most critical indicator.  It means that only 2.9% of the allocated memory is actually being used by the p..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.448706",
+    "issue": "overheating",
+    "pod": 212,
+    "namespace": 2,
+    "remediation": "bash scripts/evacuate_node.sh 212",
+    "explanation": "The predicted failure is \"overheating,\" indicated by a high `Node Temperature` (98.06\u00b0C) exceeding typical safe operating thresholds for most server hardware. While other metrics might contribute indirectly, the high temperature is the primary driver of the predicted failure.\n\n**Root Cause Analysis:..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.555377",
+    "issue": "overheating",
+    "pod": 372,
+    "namespace": 0,
+    "remediation": "bash scripts/evacuate_node.sh 372",
+    "explanation": "The predicted failure (\"overheating\") is strongly indicated by the high `Node Temperature` (92.00202634).  While other metrics provide context, they don't directly cause overheating.  Let's break down the contributing factors and recommendations:\n\n**Root Cause Analysis:**\n\n* **High Node Temperature ..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.594081",
+    "issue": "pod_failure",
+    "pod": 3656,
+    "namespace": 1,
+    "remediation": "bash scripts/optimize_resources.sh 3656",
+    "explanation": "The provided metrics suggest a potential pod failure (predicted as `pod_failure`), but pinpointing the *root* cause requires further investigation because multiple factors could be contributing.  The low resource allocation efficiencies are particularly suspicious.\n\n**Analysis of Metrics:**\n\n* **Low..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.633335",
+    "issue": "memory_exhaustion",
+    "pod": 3449,
+    "namespace": 0,
+    "remediation": "bash scripts/restart_pod.sh 3449",
+    "explanation": "The predicted failure is `memory_exhaustion`, and the metrics strongly support this.  Let's analyze the contributing factors:\n\n**Root Cause Analysis:**\n\n* **High Node Memory Usage:** The most significant indicator is the `Node Memory Usage` at 99.5%. This means the node is almost completely out of m..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.672457",
+    "issue": "pod_failure",
+    "pod": 3406,
+    "namespace": 2,
+    "remediation": "bash scripts/optimize_resources.sh 3406",
+    "explanation": "The provided Kubernetes metrics suggest a potential pod failure (predicted as `pod_failure`) for Pod 3406 in Namespace 2.  Let's break down the metrics and identify potential root causes:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.67):**  This is relatively low.  It means the pod isn..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.711756",
+    "issue": "pod_failure",
+    "pod": 1514,
+    "namespace": 3,
+    "remediation": "bash scripts/optimize_resources.sh 1514",
+    "explanation": "The provided metrics suggest a potential pod failure (`pod_failure`), but pinpointing the *root* cause requires further investigation.  While many metrics are near or exceeding reasonable thresholds, no single metric screams \"failure.\"  The low CPU allocation efficiency, combined with other indicato..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.752073",
+    "issue": "pod_failure",
+    "pod": 1112,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 1112",
+    "explanation": "The predicted failure of Pod 1112 in Namespace 0 suggests resource constraints and potential underlying issues. Let's analyze the metrics:\n\n**Concerning Metrics:**\n\n* **CPU Allocation Efficiency (0.70):**  This indicates the pod isn't utilizing its allocated CPU resources efficiently.  While not cri..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.790341",
+    "issue": "network_latency_issue",
+    "pod": 386,
+    "namespace": 0,
+    "remediation": "bash scripts/check_network.sh 386",
+    "explanation": "The predicted failure is attributed to `network_latency_issue`, with a Network Latency of 158.6583912 (units unspecified, but likely milliseconds or similar).  While other metrics are present, the prediction explicitly points to network latency as the culprit. Let's analyze this and provide recommen..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.829181",
+    "issue": "pod_failure",
+    "pod": 2105,
+    "namespace": 0,
+    "remediation": "bash scripts/optimize_resources.sh 2105",
+    "explanation": "The predicted pod failure is likely due to a combination of factors, primarily resource starvation and potentially high node temperature. Let's break down the metrics:\n\n**Critical Issues:**\n\n* **Extremely Low Resource Allocation Efficiency:**  Both CPU (0.097) and Memory (0.115) allocation efficienc..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.870113",
+    "issue": "cpu_exhaustion",
+    "pod": 4837,
+    "namespace": 3,
+    "remediation": "bash scripts/scale_cpu.sh 4837",
+    "explanation": "The predicted failure (\"cpu_exhaustion\") is strongly indicated by the extremely high Node CPU Usage (99.35%).  While other metrics contribute to the overall system health and might exacerbate the problem, the near-100% CPU usage is the primary driver.\n\n**Root Cause Analysis:**\n\nThe Kubernetes node i..."
+  },
+  {
+    "timestamp": "2025-04-09T17:26:44.910637",
+    "issue": "memory_exhaustion",
+    "pod": 4202,
+    "namespace": 2,
+    "remediation": "bash scripts/restart_pod.sh 4202",
+    "explanation": "The predicted failure is `memory_exhaustion` for Pod 4202 in Namespace 2.  While the CPU allocation efficiency is low (0.55), the primary indicator pointing to memory exhaustion is the high Memory Allocation Efficiency (0.80) combined with the prediction itself.  Let's break down the analysis and re..."
+  }
+]
