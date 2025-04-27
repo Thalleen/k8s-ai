@@ -1,1 +1,1 @@
-demo-deploy,default,cpu_exhaustion,"The predicted failure is `cpu_exhaustion`, driven by high CPU usage and low allocation efficiency."
+service-a-deployment,default,cpu_exhaustion,"The predicted failure is `cpu_exhaustion`, driven by high CPU usage and low allocation efficiency."

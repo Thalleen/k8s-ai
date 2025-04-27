@@ -20,25 +20,28 @@ for _, row in df.iterrows():
     explanation = row["root_cause_analysis"]
 
     # Get remediation action
-    remediation_cmd = get_remediation_plan(issue, pod_name)
+    
+    get_remediation_plan(issue, pod_name)
 
-    if remediation_cmd:
-        print(f"[ACTION] Issue: {issue} on Pod: {pod_name} in Namespace: {namespace} → Running: {remediation_cmd}")
+    
+
+    # if remediation_cmd:
+    #     print(f"[ACTION] Issue: {issue} on Pod: {pod_name} in Namespace: {namespace} → Running: {remediation_cmd}")
         
-        # Optional: run in the correct namespace if needed
-        # You can inject namespace logic in your scripts if required
-        os.system(remediation_cmd)
+    #     # Optional: run in the correct namespace if needed
+    #     # You can inject namespace logic in your scripts if required
+    #     os.system(remediation_cmd)
 
-        remediation_log.append({
-            "timestamp": datetime.utcnow().isoformat(),
-            "issue": issue,
-            "pod": pod_name,
-            "namespace": namespace,
-            "remediation": remediation_cmd,
-            "explanation": explanation[:300] + "..."  # Truncate explanation for readability
-        })
-    else:
-        print(f"[SKIP] No remediation rule for issue: {issue}")
+    #     remediation_log.append({
+    #         "timestamp": datetime.utcnow().isoformat(),
+    #         "issue": issue,
+    #         "pod": pod_name,
+    #         "namespace": namespace,
+    #         "remediation": remediation_cmd,
+    #         "explanation": explanation[:300] + "..."  # Truncate explanation for readability
+    #     })
+    # else:
+    #     print(f"[SKIP] No remediation rule for issue: {issue}")
 
 # Save remediation actions log
 log_file = "remediation_logs.json"

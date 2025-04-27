@@ -30,6 +30,13 @@ class DeploymentManager:
 
         except client.ApiException as e:
             print(f"Failed to update deployment: {e}")
+    
+    def getDeploymentConfig(self):
+        """
+        Get the current configuration of a deployment.
+        """
+        deployment = self.apps_v1.read_namespaced_deployment(self.deploymentName, self.namespace)
+        return deployment
 
     def updateDeploymentConfig(self, cpu=None, memory=None, image=None, env=None, volume=None):
         """
@@ -39,7 +46,9 @@ class DeploymentManager:
                 try:
                     # Get the latest version of the deployment
                     deployment = self.apps_v1.read_namespaced_deployment(self.deploymentName, self.namespace)
-
+                    
+                    print("I am here")
+                
                     # Update container resources
                     resourceDict = {}
                     if cpu is not None:
