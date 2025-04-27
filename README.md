@@ -138,8 +138,3 @@ The core logic for interacting with the LLM is in the **src/root_cause_analysis.
 
 ##### 📄note 
 *The effectiveness of the LLM-based diagnosis heavily relies on the quality of the prompts. You can modify the prompts in src/root_cause_analysis.py to tailor the LLM's behavior and the level of detail in the diagnosis and RCA.*
-
-
-
-
-
