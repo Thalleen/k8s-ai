@@ -1,3 +1,4 @@
+
 # rules_engine.py
 import sys
 import os
@@ -36,15 +37,4 @@ def get_remediation_plan(issue_type, pod_name):
     elif issue_type == "memory_exhaustion":
         print("here2")
         deployment_manager.updateDeploymentConfig(memory=updated_memory)
-    # elif issue_type == "disk_io_bottleneck":
-    #     return f"bash scripts/move_pod.sh {pod_name}"
-    # elif issue_type == "network_latency_issue":
-    #     return f"bash scripts/check_network.sh {pod_name}"
-    # elif issue_type == "overheating":
-    #     return f"bash scripts/evacuate_node.sh {pod_name}"
-    # elif issue_type == "pod_termination":
-    #     return f"bash scripts/log_and_restart.sh {pod_name}"
-    # elif issue_type == "pod_failure":
-    #     return f"bash scripts/optimize_resources.sh {pod_name}"
-    # else:
-    #     return None
+   

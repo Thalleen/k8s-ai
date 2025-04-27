@@ -1,0 +1,1 @@
+Pod name: service-a-deployment in namespace: default faced issue cpu_exhaustion. Remedied with remediation agent
