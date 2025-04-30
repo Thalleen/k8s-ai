@@ -143,5 +143,13 @@ The core logic for interacting with the LLM is in the **src/root_cause_analysis.
 
 The actionable agent is located in the **srcremediation/** folder.
 
+## 🤖 Agent in Action 
+A high CPU usage level was detected, approaching the system's predefined limit. In response, the agent initiated an action to increase the CPU limit in order to maintain optimal performance and system stability.
+### Before
+<img width="1080" alt="Screenshot 2025-03-23 at 8 33 11 PM" src="https://github.com/user-attachments/assets/7c2d971a-7f97-4131-987b-cf12e6dd7446" />
+
+### After
+<img width="1080" alt="Screenshot 2025-03-23 at 8 33 11 PM" src="https://github.com/user-attachments/assets/02be114f-be53-4946-bb81-6e5311e4e29a" />
+
 ##### 📄note 
 *The effectiveness of the LLM-based diagnosis heavily relies on the quality of the prompts. You can modify the prompts in src/root_cause_analysis.py to tailor the LLM's behavior and the level of detail in the diagnosis and RCA.*
