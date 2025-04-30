@@ -9,6 +9,10 @@ While most solutions stop at anomaly detection, this project goes further by off
 
 ---
 
+### Project Architecture 
+
+<img width="1050" alt="Screenshot 2025-04-30 at 4 54 40 PM" src="https://github.com/user-attachments/assets/58d1c51f-4c8e-47f9-8569-c9dc1c012af5" />
+
 ## 📁 Project Structure
 
 
@@ -113,9 +117,9 @@ pip install -r requirements.txt
 ## 🧠 Enhanced Kubernetes Insights with LLM-Powered Diagnostics
 
 ### Overview
-Building upon the foundation of failure prediction and anomaly detection in Phase 1, Phase 2 of **k8s-ai** introduces a powerful capability: **intelligent diagnosis of Kubernetes errors and automated Root Cause Analysis (RCA)** using Large Language Models (LLMs).
+Building upon the foundation of failure prediction and anomaly detection in Phase 1, Phase 2 of **k8s-ai** introduces a powerful capability: **intelligent diagnosis of Kubernetes errors and automated Root Cause Analysis (RCA)** using Large Language Models (LLMs). In addition to this, we've developed an actionable agent that receives the root cause analysis and actionable recommendations(from the LLM), runs them through a rule engine which converts these recommendations to concrete k8s actions and updates the deployment configuratoins via the kubernetes API
 
-Instead of just identifying anomalies, this phase focuses on providing **human-readable, context-aware explanations** for errors by feeding specific Kubernetes attributes and metrics to an LLM. This enables faster troubleshooting, deeper understanding of complex issues, and ultimately, more resilient and stable Kubernetes clusters.
+Instead of just identifying anomalies, this phase focuses on providing **human-readable, context-aware explanations** for errors by feeding specific Kubernetes attributes and metrics to an LLM. This enables faster troubleshooting, deeper understanding of complex issues, and ultimately, more resilient and stable Kubernetes clusters, along with an agent that can perform these actions instead of a human who'd spend time on it
 
 ---
 
@@ -125,6 +129,7 @@ Instead of just identifying anomalies, this phase focuses on providing **human-r
 * **Contextual Root Cause Analysis:** The LLM analyzes the provided context (metrics, logs, configurations) to infer potential root causes.
 * **Explainable Insights:** Receive natural language explanations and potential reasons behind the observed errors.
 * **Actionable Recommendations:** The LLM can suggest potential steps to mitigate the diagnosed issues.
+* **Actionable agent**: Receives actionable recommendations from the LLM and manipulates the deployment configurations(like CPU and memory) via the k8s API.
 * **Integration with Existing Monitoring:** Designed to work with data collected from your existing Kubernetes monitoring tools.
 * **Extensible Framework:** Easily adapt and configure the prompts and context provided to the LLM.
 
@@ -135,6 +140,8 @@ Instead of just identifying anomalies, this phase focuses on providing **human-r
 
 ### <ul> Utilize LLM-Based Error Diagnosis
 The core logic for interacting with the LLM is in the **src/root_cause_analysis.py** script. You will need to integrate this into your workflow to feed relevant Kubernetes attributes and metrics.
+
+The actionable agent is located in the **srcremediation/** folder.
 
 ##### 📄note 
 *The effectiveness of the LLM-based diagnosis heavily relies on the quality of the prompts. You can modify the prompts in src/root_cause_analysis.py to tailor the LLM's behavior and the level of detail in the diagnosis and RCA.*
